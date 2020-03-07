@@ -62,6 +62,10 @@ Macbook Air
 		height: 500px;
 	}
 
+	#sect1 .mobile-about {
+		display: none;
+	}
+
 	#sect1 .about {
 		width: 50%;
 		margin-top: 8em;

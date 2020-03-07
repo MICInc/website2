@@ -51,21 +51,19 @@ Mobile
 	}
 
 	#sect1 {
-		display: flex;
-		height: 500px;
+		height: auto;
 	}
 
 	#sect1 .about {
-		margin-top: 7em;
-		width: 100%;
+		display: none;
 	}
 
 	#sect1 .about p {
 	}
 
 	#sect1 .title-box {
-		margin-top: 7em;
-		width: 100%;
+		margin: 7em 0 0 1em;
+		width: 90%;
 	}
 
 	#sect1 .title-box h1 {
@@ -74,5 +72,11 @@ Mobile
 		margin: 0;
 		text-align: left;
 		color: #380E89;
+	}
+
+	#sect1 .mobile-about {
+		display: block;
+		margin: 1em 0 0 1em;
+		width: 90%;
 	}
 }
