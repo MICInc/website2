@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Futura;
+	background-image: linear-gradient(#FFF, #F7702D, #380E89);
+}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: 500;
+	margin: 100px;
+	text-align: center;
+	padding: 0;
+}
+
+a {
+	padding: 1em 0;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.default-nav {
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	background-color: transparent;
+}
+
+.default-nav ul {
+	float: right;
+}
+
+.default-nav ul li {
+	margin-top: 1em;
+}
+
+.default-nav ul li a {
+	float: right;
+	text-align: right;
+	padding-right: 1em;
+}
+
+.default-nav ul li a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.default-nav .icon {
+	display: none
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+}
+
+#home {
+	margin: 1em 0 0 1em;
+	padding: 0;
+	float: left;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: right;
+}
+
+li {
+	float: left;
+}
+
+.sect {
+	height: 700px;
+	display: inline-block;
+	width: calc(100% - 4em);
+	padding-left: 4em;
+}
+
+#sect1 {
+	display: flex;
+	height: 500px;
+}
+
+#sect1 .about {
+	width: 50%;
+	margin-top: 8em;
+	height: auto;
+	padding: 0;
+}
+
+#sect1 .about p {
+	padding: 0;
+	margin: 0;
+	font-size: 3em;
+}
+
+#sect1 .title-box {
+	flex-grow: 1;
+	right: 0;
+	width: 50%;
+	margin: 8em 1em 0em 1em;
+}
+
+#sect1 .title-box h1 {
+	font-size: 5em;
+	font-weight: 500;
+	margin: 0;
+	text-align: right;
+	color: #380E89;
+}
+
+/*
+#sect2 {
+	background: red;
+}
+
+#sect3 {
+	background: blue;
+}
+
+#sect4 {
+	background: #;
+}*/
+
+#footer {
+	left: 0;
+	bottom: 0;
+	height: 200px;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 320px) {
+	
+}

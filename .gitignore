@@ -1,0 +1,18 @@
+# black list
+.*
+~*
+node_modules/
+
+# development files
+dev/
+
+# logs
+.log
+
+# private keys
+*.der
+*.key
+*.pem
+
+# white list
+!.gitignore
