@@ -20,15 +20,27 @@ Mobile
 		padding: 10px;
 	}
 
-	.default-nav ul {
+	#menu {
 		display: none;
+		min-height: 100%;
+		width: 100%;
+		margin: 0 10px 0 0;
+		text-align: right;
+		position: fixed;
+	}
+
+	#menu a {
+		padding-right: 20px;
 	}
 
 	.pancake {
 		float: right;
 		display: block;
-		margin: 5px 20px 0 0;
+		position: absolute;
+		right: 20px;
+		top: 5px;
 		padding: 0;
+		margin: 10px 20px 0 0;
 	}
 
 	.bar1, .bar2, .bar3 {
@@ -97,5 +109,6 @@ Mobile
 		width: 90%;
 		color: #FFF;
 		text-transform: uppercase;
+		font-size: .8em;
 	}
 }
