@@ -16,6 +16,10 @@ Mobile
 		height: 50px;
 	}
 
+	/*
+		begin pancake menu
+	*/
+
 	.default-nav {
 		padding: 10px;
 	}
@@ -26,10 +30,12 @@ Mobile
 		width: 90%;
 		margin: 0 10px 0 0;
 		position: fixed;
+		transition: 0.3s ease;
 	}
 
 	#menu li {
 		margin: 1.5em;
+		list-style: none;
 		text-align: center;
 	}
 
@@ -40,6 +46,10 @@ Mobile
 		text-transform: uppercase;
 	}
 
+	#menu a:hover {
+		color: #7356AC;
+	}
+
 	#menu a:link {
 		color: black;
 	}
@@ -48,7 +58,7 @@ Mobile
 		color: #380E89;
 	}
 
-	.pancake {
+	#pancake {
 		z-index: 1;
 		float: right;
 		display: block;
@@ -57,15 +67,49 @@ Mobile
 		top: 5px;
 		padding: 0;
 		margin: 10px 20px 0 0;
+		cursor: pointer;
 	}
 
-	.bar1, .bar2, .bar3 {
+	.bar {
 		width: 35px;
 		height: 5px;
 		background-color: #380E89;
 		margin: 6px 0;
 		transition: 0.4s;
+		border-radius: 5px;
+		transition: 0.3s ease;
 	}
+
+	#bar1 {
+		transform: translateY(-4px);
+	}
+	
+	#bar3 {
+		transform: translateY(4px);
+	} 
+
+	#menu {
+		padding: 0;
+		transition: 0.3s ease;
+		display: none;
+	}
+
+	.change .bar{
+		background-color: #380E89;
+	}
+	.change #bar1{
+		transform: translateY(4px) rotateZ(-45deg);
+	}
+	.change #bar3{
+		transform: translateY(-6px) rotate(45deg);
+	}
+	.change #bar2{
+		opacity: 0;
+	}
+	.change{
+		display: block;
+	}
+	/* End pancake*/
 
 	.sect {
 		margin: 0 0 0 1em;
