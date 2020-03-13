@@ -28,7 +28,7 @@ Mobile
 		display: none;
 		min-height: 100%;
 		width: 90%;
-		margin: 0 10px 0 0;
+		margin-top: 1.8em;
 		position: fixed;
 		transition: 0.3s ease;
 	}
@@ -36,11 +36,10 @@ Mobile
 	#menu li {
 		margin: 1.5em;
 		list-style: none;
-		text-align: center;
+		text-align: left;
 	}
 
 	#menu a {
-		text-align: center;
 		font-size: 2em;
 		font-weight: 500;
 		text-transform: uppercase;
