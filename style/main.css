@@ -71,7 +71,7 @@ body {
 	overflow: hidden;
 	position: fixed;
 	top: 0;
-	background: transparent !important;
+	background: transparent;
 }
 
 #menu li a:hover {
