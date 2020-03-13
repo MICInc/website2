@@ -130,7 +130,7 @@ Mobile
 	}
 
 	#sect1 .title-box {
-		margin: 7em 0 0 0;
+		margin-top: 7em;
 		width: 90%;
 	}
 
@@ -144,7 +144,7 @@ Mobile
 
 	#sect1 .mobile-about {
 		display: block;
-		margin: 1em 0 0 0;
+		margin-top: 1em;
 		width: 90%;
 	}
 

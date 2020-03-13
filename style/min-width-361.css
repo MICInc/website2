@@ -1,7 +1,7 @@
 /*
-Macbook Air
+Tablet
 */
-@media screen and (min-width: 768px) {
+@media only screen and (max-width: 536px) and (min-width: 361px) {
 	h1 {
 		text-transform: uppercase;
 		font-weight: 500;
@@ -58,40 +58,35 @@ Macbook Air
 	}
 
 	#sect1 {
-		display: flex;
 		height: 500px;
 	}
 
-	#sect1 .mobile-about {
+	#sect1 .about {
 		display: none;
 	}
 
-	#sect1 .about {
-		width: 50%;
-		margin-top: 8em;
-		height: auto;
-		padding: 0;
-	}
-
-	#sect1 .about p {
-		padding: 0;
-		margin: 0;
-		font-size: 3em;
-	}
-
 	#sect1 .title-box {
-		flex-grow: 1;
-		right: 0;
-		width: 50%;
-		margin: 8em 1em 0em 1em;
+		width: 90%;
+		margin-top: 8em;
 	}
 
 	#sect1 .title-box h1 {
-		font-size: 5em;
+		font-size: 3em;
 		font-weight: 500;
 		margin: 0;
 		text-align: right;
 		color: #380E89;
+	}
+
+	#sect1 .mobile-about {
+		display: block;
+		margin-top: 1em;
+		width: 90%;
+	}
+
+	#sect1 .mobile-about p {
+		font-size: 1.5em;
+		text-align: right;
 	}
 
 	/*

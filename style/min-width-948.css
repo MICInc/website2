@@ -1,0 +1,117 @@
+/*
+Tablet
+*/
+@media only screen and (max-width: 1171px) and (min-width: 948px) {
+	h1 {
+		text-transform: uppercase;
+		font-weight: 500;
+		margin: 100px;
+		text-align: center;
+		padding: 0;
+	}
+
+	a {
+		padding: 1em 0;
+		display: block;
+		text-decoration: none;
+		color: #000;
+		text-transform: uppercase;
+	}
+
+	.default-nav ul li {
+		margin-top: 1em;
+	}
+
+	.default-nav ul li a {
+		float: right;
+		text-align: right;
+		padding-right: 1em;
+	}
+
+	.logo {
+		width: 50px;
+		height: 50px;
+	}
+
+	#home {
+		margin: 1em 0 0 1em;
+		padding: 0;
+		float: left;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		float: right;
+	}
+
+	li {
+		float: left;
+	}
+
+	.sect {
+		height: 700px;
+		display: inline-block;
+		width: calc(100% - 4em);
+		padding-left: 4em;
+	}
+
+	#sect1 {
+		display: flex;
+		height: 500px;
+	}
+
+	#sect1 .mobile-about {
+		display: none;
+	}
+
+	#sect1 .about {
+		width: 50%;
+		margin-top: 8em;
+		height: auto;
+		padding: 0;
+	}
+
+	#sect1 .about p {
+		padding: 0;
+		margin: 0;
+		font-size: 2.8em;
+	}
+
+	#sect1 .title-box {
+		flex-grow: 1;
+		right: 0;
+		width: 50%;
+		margin: 8em 1em 0em 1em;
+	}
+
+	#sect1 .title-box h1 {
+		font-size: 4em;
+		font-weight: 500;
+		margin: 0;
+		text-align: right;
+		color: #380E89;
+	}
+
+	/*
+	#sect2 {
+		background: red;
+	}
+
+	#sect3 {
+		background: blue;
+	}
+
+	#sect4 {
+		background: #;
+	}*/
+
+	#footer {
+		left: 0;
+		bottom: 0;
+		height: 200px;
+		color: #FFF;
+		text-transform: uppercase;
+	}
+}
