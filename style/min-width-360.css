@@ -98,10 +98,10 @@ Mobile
 		background-color: #380E89;
 	}
 	.change #bar1{
-		transform: translateY(4px) rotateZ(-45deg);
+		transform: translateY(10px) rotateZ(-45deg);
 	}
 	.change #bar3{
-		transform: translateY(-6px) rotate(45deg);
+		transform: translateY(-10px) rotate(45deg);
 	}
 	.change #bar2{
 		opacity: 0;
