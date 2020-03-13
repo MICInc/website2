@@ -71,7 +71,17 @@ body {
 	overflow: hidden;
 	position: fixed;
 	top: 0;
-	background-color: transparent;
+	background: transparent !important;
+}
+
+#menu li a:hover {
+	color: #fff;
+	transition: 0.5s ease;
+	-webkit-transition: color 0.5s ease-in-out;
+	-moz-transition: color 0.5s ease-in-out;
+	-ms-transition: color 0.5s ease-in-out;
+	-o-transition: color 0.5s ease-in-out;
+	transition: color 0.5s ease-in-out;
 }
 
 .default-nav ul {

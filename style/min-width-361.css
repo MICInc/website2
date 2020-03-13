@@ -57,6 +57,10 @@ Tablet
 		padding-left: 4em;
 	}
 
+	.sect h1 {
+		font-size: 2.4em;
+	}
+
 	#sect1 {
 		height: 500px;
 	}
@@ -89,18 +93,15 @@ Tablet
 		text-align: right;
 	}
 
-	/*
-	#sect2 {
-		background: red;
-	}
-
 	#sect3 {
-		background: blue;
+		margin: 0;
+		padding: 0;
+		width: 100%;
 	}
 
-	#sect4 {
-		background: #;
-	}*/
+	#sect3 h1 {
+		width: 70%;
+	}
 
 	#footer {
 		left: 0;
