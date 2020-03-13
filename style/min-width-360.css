@@ -46,10 +46,6 @@ Mobile
 		text-transform: uppercase;
 	}
 
-	#menu a:hover {
-		color: #7356AC;
-	}
-
 	#menu a:link {
 		color: black;
 	}
@@ -94,19 +90,19 @@ Mobile
 		display: none;
 	}
 
-	.change .bar{
+	.change .bar {
 		background-color: #380E89;
 	}
-	.change #bar1{
+	.change #bar1 {
 		transform: translateY(10px) rotateZ(-45deg);
 	}
-	.change #bar3{
+	.change #bar3 {
 		transform: translateY(-10px) rotate(45deg);
 	}
-	.change #bar2{
+	.change #bar2 {
 		opacity: 0;
 	}
-	.change{
+	.change {
 		display: block;
 	}
 	/* End pancake*/
