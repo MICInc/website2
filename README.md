@@ -1,3 +1,28 @@
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
 Todo:
 1. Responsive nav bar
 2. Breakpoints for sect 1
@@ -12,3 +37,4 @@ Todo:
 10. Add pictures from conferences
 11. Information on current conference
 12. On scroll, after scroll down P px, switch menu to pancake icon
+13. Twitter feed with just text no embedding
