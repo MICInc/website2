@@ -119,7 +119,7 @@ li {
 	transition: color 0.5s ease-in-out;
 }
 
-.pancake {
+#pancake {
 	display: none;
 }
 
