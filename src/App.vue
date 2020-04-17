@@ -1,3 +1,21 @@
+<template>
+	<div id="vue-app">
+		<router-view/>
+	</div>
+</template>
+
+<script>
+import router from './router';
+
+export default {
+	data() {
+		return {
+		}
+	}
+}
+</script>
+
+<style>
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -22,7 +40,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -54,6 +71,7 @@ html {
 }
 
 body {
+	width: 100%;
 	min-height: 100%;
 	margin: 0;
 	padding: 0;
@@ -61,33 +79,19 @@ body {
 	background-image: linear-gradient(#FFF, #F7702D, #380E89);
 }
 
-#main-nav {
-	z-index: 2;
+a {
+	padding: 1em 0;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
 }
 
-.default-nav {
-	width: 100%;
-	background: #fff;
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-	background: transparent;
+#app {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin-top: 50px; /*Should match navbar height*/
 }
 
-#menu li a:hover {
-	color: #7356AC;
-	transition: 0.5s ease;
-	-webkit-transition: color 0.5s ease-in-out;
-	-moz-transition: color 0.5s ease-in-out;
-	-ms-transition: color 0.5s ease-in-out;
-	-o-transition: color 0.5s ease-in-out;
-	transition: color 0.5s ease-in-out;
-}
-
-.default-nav ul {
-	float: right;
-}
-
-.pancake {
-	display: none;
-}
+</style>
