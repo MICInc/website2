@@ -1,11 +1,11 @@
 <template>
 	<div id="navbar">
 		<nav id="main-nav" class="default-nav">
-			<a id="home"><img class="logo" src="assets/img/logo.png"></a>
+			<a id="nav-logo" href="#home"><img class="logo" src="assets/img/logo.png"></a>
 			<ul id="menu">
-				<li><a href="#sect2">about</a></li>
-				<li><a href="#sect3">conference</a></li>
-				<li><a href="#sect4">contact</a></li>
+				<li><a href="#about">about</a></li>
+				<li><a href="#conference">conference</a></li>
+				<li><a href="#contact">contact</a></li>
 			</ul>
 			<Pancake 
 				id="pancake"
@@ -92,7 +92,7 @@
 	height: 50px;
 }
 
-#home {
+#nav-logo {
 	margin: 1em 0 0 1em;
 	padding: 0;
 	float: left;

@@ -53,6 +53,15 @@
 		display: inline-block;
 		padding-left: 4em;
 	}
+
+	.sect h1 {
+		font-size: 3em;
+		margin-bottom: 1em;
+	}
+
+	.sect p {
+		line-height: 1.6;
+	}
 }
 
 @media screen and (max-width: 360px) {
