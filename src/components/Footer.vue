@@ -24,6 +24,7 @@ export default {
 
 <style scoped>
 .sect {
+	width: 94vw;
 	left: 0;
 	bottom: 0;
 	height: 200px;
@@ -31,8 +32,24 @@ export default {
 	text-transform: uppercase;
 }
 
+#social-media {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#social-media a {
+	font-size: 1em;
+	color: #FFF;
+	margin-right: 1em;
+}
+.sect p {
+		text-align: center;
+	}
+
 @media screen and (max-width: 360px) {
 	.sect {
+		width: 91vw;
 		max-height: 100px;
 		margin: 0;
 	}
@@ -40,13 +57,11 @@ export default {
 	#social-media {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: flex-start;
+		justify-content: center;
 	}
 
-	#social-media a {
-		font-size: 1em;
-		color: #FFF;
-		margin-right: 1em;
+	.sect p {
+		text-align: center;
 	}
 }
 </style>

@@ -26,6 +26,7 @@
 
 .code_of_conduct {
 	text-align: center;
+	font-size: 1.5em;
 }
 
 .code_of_conduct a {
