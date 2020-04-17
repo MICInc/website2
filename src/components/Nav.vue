@@ -1,7 +1,7 @@
 <template>
 	<div id="navbar">
 		<nav id="main-nav" class="default-nav">
-			<a id="home"><img class="logo" src="img/logo.png"></a>
+			<a id="home"><img class="logo" src="assets/img/logo.png"></a>
 			<ul id="menu">
 				<li><a href="#sect2">about</a></li>
 				<li><a href="#sect3">conference</a></li>

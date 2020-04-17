@@ -75,7 +75,7 @@ body {
 	min-height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: Futura;
+	font-family: "Yantramanav";
 	background-image: linear-gradient(#FFF, #F7702D, #380E89);
 }
 
@@ -93,5 +93,4 @@ a {
 	min-height: 100vh;
 	margin-top: 50px; /*Should match navbar height*/
 }
-
 </style>
