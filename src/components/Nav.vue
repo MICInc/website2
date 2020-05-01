@@ -53,12 +53,13 @@
 					let menu = document.getElementById("menu");
 					menu.style.display = "none";
 					document.getElementById("main-nav").style.pointerEvents = "none";
-					document.getElementById("nav-logo").style.pointerEvents = "auto";
+					document.getElementById("nav-logo").style.pointerEvents = "all";
 				}
 				else {
 					let menu = document.getElementById("menu");
 					menu.style.display = "block";
 					document.getElementById("main-nav").style.zIndex = 2;
+					document.getElementById("main-nav").style.pointerEvents = "all";
 				}
 			}
 		},
