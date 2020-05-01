@@ -2,7 +2,7 @@
 	<div id="conference" class="sect">
 		<div class="header-sect">
 			<h1 class="compress-header">virtual machine intelligence conference</h1>
-			<button class="btn">register</button>
+			<a href="/register"><button class="btn">register</button></a>
 		</div>
 		<div class="content">
 		<p>
@@ -72,7 +72,7 @@
 }
 
 .header-sect button:hover {
-	border: 2px solid rgba(255, 255, 255, .5);
+	cursor: pointer;
 }
 
 .content {

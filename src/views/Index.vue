@@ -73,7 +73,6 @@
 		text-transform: uppercase;
 		font-weight: 500;
 		margin: 100px;
-		/* text-align: center; */
 		padding: 0;
 	}
 
