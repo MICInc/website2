@@ -88,6 +88,7 @@
 
 	.sect p {
 		line-height: 1.6;
+		padding-right: 2em;
 	}
 }
 
