@@ -3,8 +3,11 @@
 		<Nav></Nav>
 		<Home></Home>
 		<Latest></Latest>
+		<ImageSect :img="images.img1" :capt="captions.capt1.text" :capimg="captions.capt1.rev"></ImageSect>
 		<About></About>
+		<ImageSect :img="images.img2" :capt="captions.capt2.text" :capimg="captions.capt2.rev"></ImageSect>
 		<Conference></Conference>
+		<ImageSect :img="images.img3" :capt="captions.capt3.text" :capimg="captions.capt3.rev"></ImageSect>
 		<Contact></Contact>
 		<Footer></Footer>
 	</div>
@@ -18,6 +21,7 @@
 	import Conference from '@/components/Conference'
 	import Contact from '@/components/Contact'
 	import Footer from '@/components/Footer'
+	import ImageSect from '@/components/ImageSect'
 
 	export default {
 		name: 'index',
@@ -28,11 +32,30 @@
 			About,
 			Conference,
 			Contact,
-			Footer
+			Footer,
+			ImageSect
 		},
 		data () {
 			return {
-
+				images: {
+					'img1': 'wiml2.jpg',
+					'img2': 'wiml.jpg',
+					'img3': 'kenneth.jpg'
+				},
+				captions: {
+					'capt1': {
+						'text': 'Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet. Placerat lorem velit id lorem sit, eros at eget enim, vestibulum diam imperdiet vitae suscipit nonummy, tempus sed consequat enim ligula sit at, fusce justo cras nulla et.',
+						'rev': false
+					},
+					'capt2': {
+						'text': 'Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet. Placerat lorem velit id lorem sit, eros at eget enim, vestibulum diam imperdiet vitae suscipit nonummy, tempus sed consequat enim ligula sit at, fusce justo cras nulla et.',
+						'rev': true
+					},
+					'capt3': {
+						'text': 'Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet. Placerat lorem velit id lorem sit, eros at eget enim, vestibulum diam imperdiet vitae suscipit nonummy, tempus sed consequat enim ligula sit at, fusce justo cras nulla et.',
+						'rev': false
+					}
+				}
 			}
 		},
 		methods: {
@@ -52,7 +75,8 @@
 	}
 
 	.sect {
-		height: 700px;
+		margin: 2em 0;
+		height: auto;
 		display: inline-block;
 		padding-left: 4em;
 	}
