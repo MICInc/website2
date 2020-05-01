@@ -1,18 +1,18 @@
 <template>
-	<div id="about" class="sect">
-    <h1>Latest</h1>
+	<div id="sponsor" class="sect">
+    <h1>Sponsor</h1>
 		<div class="content">
 			<ul>
 				<li v-for="(l,i) in latest" :key="i">{{ l.date }}  {{ l.content }}</li>
 			</ul>
-			<img class="crop" src="assets/img/alums.jpg">
+			<img class="crop" src="assets/img/sponsor.jpg">
 		</div>
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'latest',
+		name: 'sponsor',
 		data() {
 			return {
 				latest: [

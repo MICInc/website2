@@ -8,6 +8,7 @@
 		<ImageSect :img="images.img2" :capt="captions.capt2.text" :capimg="captions.capt2.rev"></ImageSect>
 		<Conference></Conference>
 		<ImageSect :img="images.img3" :capt="captions.capt3.text" :capimg="captions.capt3.rev"></ImageSect>
+		<Sponsor></Sponsor>
 		<Contact></Contact>
 		<Footer></Footer>
 	</div>
@@ -22,6 +23,7 @@
 	import Contact from '@/components/Contact'
 	import Footer from '@/components/Footer'
 	import ImageSect from '@/components/ImageSect'
+	import Sponsor from '@/components/Sponsor'
 
 	export default {
 		name: 'index',
@@ -31,6 +33,7 @@
 			Latest,
 			About,
 			Conference,
+			Sponsor,
 			Contact,
 			Footer,
 			ImageSect
