@@ -7,13 +7,13 @@
 				<li><a href="#conference">conference</a></li>
 				<li><a href="#contact">contact</a></li>
 			</ul>
-			<Pancake 
+			<Pancake
 				id="pancake"
 				:close="pancake"
 				v-on:change="toggle_mobile_menu($event)">
 			</Pancake>
 		</nav>
-		<MobileMenu 
+		<MobileMenu
 			id="mobile_menu"
 			v-if="this.menu"
 			v-on:close="toggle_mobile_menu($event)">
@@ -34,7 +34,8 @@
 		data() {
 			return {
 				pancake: false,
-				menu: false
+				menu: false,
+				scroll_pos: null
 			}
 		},
 		methods: {
@@ -43,11 +44,27 @@
 				this.pancake = state;
 
 				if(!this.menu || !this.pancake) {
-					var nav = document.getElementById("main-nav");
+					let nav = document.getElementById("main-nav");
 					nav.style.backgroundColor = "transparent";
 				}
+			},
+			change_bg() {
+				if(window.scrollY > 93) {
+					let menu = document.getElementById("menu");
+					menu.style.display = "none";
+					document.getElementById("main-nav").style.pointerEvents = "none";
+					document.getElementById("nav-logo").style.pointerEvents = "auto";
+				}
+				else {
+					let menu = document.getElementById("menu");
+					menu.style.display = "block";
+					document.getElementById("main-nav").style.zIndex = 2;
+				}
 			}
-		}
+		},
+		mounted() {
+			window.addEventListener('scroll', this.change_bg);
+		},
 	}
 </script>
 
@@ -64,26 +81,26 @@
 	background-color: transparent;
 }
 
-.default-nav ul {
+#main-nav ul {
 	float: right;
 }
 
-.default-nav ul li {
+#main-nav ul li {
 	margin-top: 1em;
 }
 
-.default-nav ul li a {
+#main-nav ul li a {
 	float: right;
 	text-align: right;
 	padding-right: 1em;
 }
 
-.default-nav ul li a.active {
+#main-nav ul li a.active {
 	background-color: #4CAF50;
 	color: white;
 }
 
-.default-nav .icon {
+#main-nav .icon {
 	display: none
 }
 

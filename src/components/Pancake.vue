@@ -1,5 +1,5 @@
 <template>
-	<div :class="{ default: true, expand: state }" 
+	<div :class="{ default: true, expand: state }"
 		v-on:click.prevent="toggle()">
 		<div class="bar1"></div>
 		<div class="bar2"></div>
@@ -26,7 +26,7 @@ export default {
 		close: {
 			deep: true,
 			immediate: true,
-			handler(curr, prev) {
+			handler(curr) {
 				this.state = curr;
 			}
 		}
