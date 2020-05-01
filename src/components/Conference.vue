@@ -1,6 +1,6 @@
 <template>
 	<div id="conference" class="sect">
-		<h1>machine intelligence conference</h1>
+		<h1 class="compress-header">virtual machine intelligence conference</h1>
 		<div class="content">
 		<p>
 			Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet. Placerat lorem velit id lorem sit, eros at eget enim, vestibulum diam imperdiet vitae suscipit nonummy, tempus sed consequat enim ligula sit at, fusce justo cras nulla et. Non sit mauris mi in, sed nullam, proin lectus erat. Semper nostra in mi adipiscing at, natoque in, sed nunc. Donec turpis mauris elit morbi praesent mauris, pharetra pharetra. Velit adipiscing in gravida tellus faucibus, tempus cras, risus tellus id lacus. Suspendisse morbi mattis sed convallis ac, leo ut mauris nunc, justo id gravida turpis purus necessitatibus auctor, nunc neque. Pede sed est eleifend quisque, ultrices donec integer suscipit enim gravida ornare, laoreet elementum, urna est euismod risus massa tortor.
@@ -42,6 +42,11 @@
 </script>
 
 <style scoped>
+
+.compress-header {
+	width: 30%;
+}
+
 .content {
 	-webkit-column-count: 2;
 	-moz-column-count: 2;
