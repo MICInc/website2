@@ -2,6 +2,7 @@
 	<div class="main">
 		<Nav></Nav>
 		<Home></Home>
+		<Latest></Latest>
 		<About></About>
 		<Conference></Conference>
 		<Contact></Contact>
@@ -12,6 +13,7 @@
 <script>
 	import Nav from '@/components/Nav'
 	import Home from '@/components/Home'
+	import Latest from '@/components/Latest'
 	import About from '@/components/About'
 	import Conference from '@/components/Conference'
 	import Contact from '@/components/Contact'
@@ -22,6 +24,7 @@
 		components: {
 			Nav,
 			Home,
+			Latest,
 			About,
 			Conference,
 			Contact,
@@ -44,7 +47,7 @@
 		text-transform: uppercase;
 		font-weight: 500;
 		margin: 100px;
-		text-align: center;
+		/* text-align: center; */
 		padding: 0;
 	}
 
@@ -73,7 +76,7 @@
 		text-align: center;
 		padding: 0;
 	}
-	
+
 	.sect {
 		min-height: 200px;
 		margin: 0;
