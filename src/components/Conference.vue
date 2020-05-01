@@ -15,6 +15,11 @@
 			Magna nec convallis ultrices eu sem, ante sem morbi lorem mauris tortor dui, fermentum ut. Vitae metus orci, nulla purus, dapibus nunc. Fames felis libero nulla leo natoque amet, viverra nunc, tellus nam sociis, sed interdum viverra dolor risus voluptas. Mauris vulputate, arcu volutpat lectus fermentum ornare ut id, a pellentesque. A amet augue natoque, nullam velit amet, vestibulum nulla exercitation. Libero eros lectus. Nec a libero, sed phasellus lorem justo ultrices proin etiam, quibusdam nunc. Massa proin hendrerit sapien adipiscing luctus tristique, nulla cursus imperdiet convallis.
 		</p>
 		</div>
+		<div class="committee">
+			<ul>
+				<li v-for="(c, i) in committee" :key="i">{{ c.name }}</li>
+			</ul>
+		</div>
 		<p class="code_of_conduct">
 			<a href="https://confcodeofconduct.com/" target="_blank">Code of Conduct</a>
 		</p>
@@ -23,7 +28,16 @@
 
 <script>
 	export default {
-		name: 'conference'
+		name: 'conference',
+		data() {
+			return {
+				committee: [
+					{'name': 'Justin Chen', 'title': 'General Chair'},
+					{'name': 'Lucia Vilallonga', 'title': 'Program Chair & Diversity-Inclusion Chair'},
+					{'name': 'Sree Harsha Nelaturu', 'title': 'Program Chair & Logistics Chair'}
+				]
+			}
+		}
 	}
 </script>
 
