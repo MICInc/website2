@@ -2,17 +2,24 @@
 	<div id="about" class="sect">
     <h1>Latest</h1>
 		<div class="content">
-			<p>
-				MIC, Inc. is a 501(c)(3) non-profit organization focused on democratizing machine intelligence through education, research and community by providing opportunities to learn in a community environment, connect communities with resources and industry practitioners to foster the future leaders in machine intelligence.
-			</p>
-			<img class="crop" src="assets/img/kenneth.jpg">
+			<ul>
+				<li v-for="(l,i) in latest" :key="i">{{ l.date }}{{ l.content }}</li>
+			</ul>
+			<img class="crop" src="assets/img/alums.jpg">
 		</div>
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'about'
+		name: 'latest',
+		data() {
+			return {
+				latest: [
+					{"date": "Today", "content": "Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet. Placerat lorem velit id lorem sit, eros at eget enim, vestibulum diam imperdiet vitae suscipit nonummy, tempus sed consequat enim ligula sit at, fusce justo cras nulla et. Non sit mauris mi in, sed nullam, proin lectus erat. Semper nostra in mi adipiscing at, natoque in, sed nunc. Donec turpis mauris elit morbi praesent mauris, pharetra pharetra. Velit adipiscing in gravida tellus faucibus, tempus cras, risus tellus id lacus. Suspendisse morbi mattis sed convallis ac, leo ut mauris nunc, justo id gravida turpis purus necessitatibus auctor, nunc neque. Pede sed est eleifend quisque, ultrices donec integer suscipit enim gravida ornare, laoreet elementum, urna est euismod risus massa tortor. "}
+				]
+			}
+		}
 	}
 </script>
 
@@ -30,8 +37,12 @@ h2 {
 	display:flex;
 }
 
+.content ul li {
+	width: 50%;
+}
+
 .crop {
-  width: 550px;
+  width: 700px;
   height: auto;
   clip-path: circle();
 }
