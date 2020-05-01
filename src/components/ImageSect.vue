@@ -2,9 +2,9 @@
 	<div id="about" class="sect">
 		<div :class="{'content-img-cap': !capleft, 'content-cap-img': capleft}">
 			<img class="crop" :src="'assets/img/'+image">
-			<p class="caption">
+			<h2 class="caption">
 				{{caption}}
-			</p>
+			</h2>
 		</div>
 	</div>
 </template>
@@ -49,13 +49,15 @@
 <style scoped>
 .content-img-cap {
 	display:flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .content-cap-img {
 	display:flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	flex-direction: row-reverse;
+	align-items: center;
 }
 
 .crop {
@@ -65,6 +67,7 @@
 }
 
 .caption {
+	font-size: 2em;
 	width: 50%;
 }
 
