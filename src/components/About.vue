@@ -38,6 +38,23 @@
 }
 
 @media screen and (max-width: 360px) {
+	.content {
+			display: flex;
+			flex-direction: column;
+	}
+
+	.content p {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+	.sub_label {
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+
 	.sect {
 		display: inline-block;
 	}
