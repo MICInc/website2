@@ -88,6 +88,33 @@
 	column-gap: 20px;
 }
 
+.committee {
+	display: flex;
+	flex-direction: column;
+	padding-right: 4em;
+}
+
+.committee ul li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+.sub_label {
+	font-weight: 600;
+	margin-top: 1.5em;
+	text-align: center;
+}
+
+.name {
+	font-weight: 600;
+}
+
+.title {
+	text-align: right;
+}
+
 .code_of_conduct {
 	text-align: center;
 	font-size: 1.5em;
