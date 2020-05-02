@@ -50,17 +50,19 @@
 				}
 			},
 			change_bg() {
-				if(window.scrollY > 93) {
-					let menu = document.getElementById("menu");
-					menu.style.display = "none";
-					document.getElementById("main-nav").style.pointerEvents = "none";
-					document.getElementById("nav-logo").style.pointerEvents = "all";
-				}
-				else {
-					let menu = document.getElementById("menu");
-					menu.style.display = "block";
-					document.getElementById("main-nav").style.zIndex = 2;
-					document.getElementById("main-nav").style.pointerEvents = "all";
+				if(screen.width >= 1172) {
+					if(window.scrollY > 93) {
+						let menu = document.getElementById("menu");
+						menu.style.display = "none";
+						document.getElementById("main-nav").style.pointerEvents = "none";
+						document.getElementById("nav-logo").style.pointerEvents = "all";
+					}
+					else {
+						let menu = document.getElementById("menu");
+						menu.style.display = "block";
+						document.getElementById("main-nav").style.zIndex = 2;
+						document.getElementById("main-nav").style.pointerEvents = "all";
+					}
 				}
 			}
 		},

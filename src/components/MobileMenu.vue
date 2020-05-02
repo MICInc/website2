@@ -4,6 +4,7 @@
 			<ul id="column-menu">
 				<li><a href="#about" v-on:click="click()">about</a></li>
 				<li><a href="#conference" v-on:click="click()">conference</a></li>
+				<li><a href="#sponsor" v-on:click="click()">sponsor</a></li>
 				<li><a href="#contact" v-on:click="click()">contact</a></li>
 			</ul>
 		</nav>
@@ -41,7 +42,7 @@ export default {
 }
 
 #column-menu {
-	padding: 1em 0 0 1em;
+	padding: 0 0 0 1em;
 }
 
 li {
