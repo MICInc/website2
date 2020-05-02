@@ -68,7 +68,7 @@ h2 {
 	}
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
 	.content {
 		display: flex;
 		flex-direction: column;

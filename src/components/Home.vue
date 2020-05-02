@@ -36,6 +36,7 @@
 	padding: 0;
 	margin: 0;
 	font-size: 3em;
+	background-color: blue;
 }
 
 .sect .title-box {
@@ -43,6 +44,7 @@
 	right: 0;
 	width: 50%;
 	margin: 8em 1em 0em 1em;
+	background-color: red;
 }
 
 .sect .title-box h1 {
@@ -53,13 +55,8 @@
 	color: #380E89;
 }
 
-@media screen and (max-width: 1032px) {
-	.sect .title-box h1 {
-		font-size: 4.5em;
-	}
-}
-
-@media screen and (max-width: 360px) {
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
 	.sect {
 		height: 350px;
 		width: 90%;
@@ -87,5 +84,25 @@
 		font-size: 2.5em;
 		text-align: left;
 	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
 </style>

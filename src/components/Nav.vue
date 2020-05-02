@@ -144,7 +144,7 @@ li {
 	display: none;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
 	.default-nav {
 		padding: 10px 0;
 		position: initial;

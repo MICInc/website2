@@ -71,7 +71,7 @@
 	width: 50%;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
 	.content-img-cap {
 		display:flex;
 		flex-direction: column-reverse;

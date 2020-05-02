@@ -124,7 +124,7 @@
 	color: #FFF;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
 	.compress-header {
 			width: 100%;
 	}

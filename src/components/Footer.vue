@@ -47,7 +47,7 @@ export default {
 		text-align: center;
 	}
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
 	.sect {
 		width: 91vw;
 		max-height: 100px;
