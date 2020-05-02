@@ -97,7 +97,7 @@
 @media screen and (max-width: 360px) {
 	h1 {
 		text-transform: uppercase;
-		font-size: 1.3em;
+		font-size: 2em;
 		font-weight: 500;
 		margin: 10px;
 		text-align: center;
