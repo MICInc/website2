@@ -99,7 +99,7 @@
 } */
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
 	h1 {
 		text-transform: uppercase;
 		font-size: 2em;
