@@ -45,6 +45,11 @@
 				this.menu = state;
 				this.pancake = state;
 
+				if(!state) {
+					var body = document.body;
+					body.style.overflow = "scroll";
+				}
+
 				if(!this.menu || !this.pancake) {
 					let nav = document.getElementById("main-nav");
 					nav.style.backgroundColor = "transparent";

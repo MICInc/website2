@@ -36,7 +36,7 @@
 	padding: 0;
 	margin: 0;
 	font-size: 3em;
-	background-color: blue;
+	/* background-color: blue; */
 }
 
 .sect .title-box {
@@ -44,7 +44,7 @@
 	right: 0;
 	width: 50%;
 	margin: 8em 1em 0em 1em;
-	background-color: red;
+	/* background-color: red; */
 }
 
 .sect .title-box h1 {
