@@ -53,6 +53,12 @@
 	color: #380E89;
 }
 
+@media screen and (max-width: 1032px) {
+	.sect .title-box h1 {
+		font-size: 4.5em;
+	}
+}
+
 @media screen and (max-width: 360px) {
 	.sect {
 		height: 350px;
