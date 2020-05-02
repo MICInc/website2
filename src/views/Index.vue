@@ -68,7 +68,7 @@
 </script>
 
 <style>
-@media screen and (min-width: 1172px) {
+@media screen and (min-width: 968px) {
 	h1 {
 		text-transform: uppercase;
 		font-weight: 500;
@@ -93,6 +93,11 @@
 		padding-right: 2em;
 	}
 }
+
+/* @media screen and (min-width: 361px) and (max-width: 1171px) {
+
+} */
+
 
 @media screen and (max-width: 360px) {
 	h1 {

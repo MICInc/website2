@@ -71,9 +71,6 @@
 	width: 50%;
 }
 
-@media screen and (min-width: 1172px) {
-}
-
 @media screen and (max-width: 360px) {
 	.content-img-cap {
 		display:flex;

@@ -23,7 +23,7 @@
 	display:flex;
 }
 
-@media screen and (min-width: 1172px) {
+@media screen and (min-width: 968px) {
 	.sect p {
 		width: 50%;
 		line-height: 1.5em;

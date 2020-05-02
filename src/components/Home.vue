@@ -53,10 +53,6 @@
 	color: #380E89;
 }
 
-@media screen and (min-width: 1172px) {
-
-}
-
 @media screen and (max-width: 360px) {
 	.sect {
 		height: 350px;
