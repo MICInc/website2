@@ -69,6 +69,15 @@ h2 {
 }
 
 @media screen and (max-width: 360px) {
+	.content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content ul {
+		width: 100%;
+	}
+
 	.sect {
 		display: inline-block;
 	}
