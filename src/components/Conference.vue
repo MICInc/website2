@@ -2,7 +2,7 @@
 	<div id="conference" class="sect">
 		<div class="header-sect">
 			<h1 class="compress-header">virtual machine intelligence conference</h1>
-			<a href="/register"><button class="btn">register</button></a>
+			<a href="/register" target="_blank"><button class="btn">register</button></a>
 		</div>
 		<div class="content">
 			<p>
