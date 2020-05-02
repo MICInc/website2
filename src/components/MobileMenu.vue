@@ -2,6 +2,7 @@
 	<div>
 		<nav id="mobile-nav">
 			<ul id="column-menu">
+				<li><a href="#latest" v-on:click="click()">latest</a></li>
 				<li><a href="#about" v-on:click="click()">about</a></li>
 				<li><a href="#conference" v-on:click="click()">conference</a></li>
 				<li><a href="#sponsor" v-on:click="click()">sponsor</a></li>
@@ -46,8 +47,8 @@ export default {
 }
 
 li {
-	height: 20vh;
-	font-size: 2em;
+	height: 15vh;
+	font-size: 1.8em;
 	text-align: center;
 }
 

@@ -3,6 +3,7 @@
 		<nav id="main-nav" class="default-nav">
 			<a id="nav-logo" href="#home"><img class="logo" src="assets/img/logo.png"></a>
 			<ul id="menu">
+				<li><a href="#latest">latest</a></li>
 				<li><a href="#about">about</a></li>
 				<li><a href="#conference">conference</a></li>
 				<li><a href="#sponsor">sponsor</a></li>

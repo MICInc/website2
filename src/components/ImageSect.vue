@@ -1,5 +1,5 @@
 <template>
-	<div id="about" class="sect">
+	<div id="imagesect" class="sect">
 		<div :class="{'content-img-cap': !capleft, 'content-cap-img': capleft}">
 			<img class="crop" :src="'assets/img/'+image">
 			<h2 class="caption">

@@ -1,5 +1,5 @@
 <template>
-	<div id="about" class="sect">
+	<div id="latest" class="sect">
     <h1>Latest</h1>
 		<div class="content">
 			<ul>
