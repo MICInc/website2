@@ -92,4 +92,24 @@
 .code_of_conduct a {
 	color: #FFF;
 }
+
+@media screen and (max-width: 360px) {
+	.header-sect {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content ul {
+		width: 100%;
+	}
+
+	.sect {
+		display: inline-block;
+	}
+}
 </style>
