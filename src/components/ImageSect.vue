@@ -75,8 +75,20 @@
 }
 
 @media screen and (max-width: 360px) {
-	.sect {
-		display: inline-block;
+	.content-img-cap {
+		display:flex;
+		flex-direction: column-reverse;
+	}
+
+	.content-cap-img {
+		display:flex;
+		flex-direction: column-reverse;
+	}
+
+	.caption {
+		font-size: 1.5em;
+		width: 100%;
+		text-align: center;
 	}
 }
 </style>
