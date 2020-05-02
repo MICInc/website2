@@ -86,6 +86,10 @@
 	}
 
 	.caption {
+		margin-bottom: 20px;
+	}
+
+	.caption {
 		font-size: 1.5em;
 		width: 100%;
 		text-align: center;

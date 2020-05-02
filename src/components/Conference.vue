@@ -19,8 +19,12 @@
 			</p>
 		</div>
 		<div class="committee">
+			<span class="sub_label">Conference Committee</span>
 			<ul>
-				<li v-for="(c, i) in committee" :key="i">{{ c.name }}</li>
+				<li v-for="(c, i) in committee" :key="i">
+					<span class="name">{{ c.name }}</span>
+					<span class="title">{{ c.title }}</span>
+				</li>
 			</ul>
 		</div>
 		<p class="code_of_conduct">
@@ -116,6 +120,32 @@
 	p {
 		text-align: center;
 		margin-bottom: 10px;
+	}
+
+	.committee {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.committee ul li {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 10px 0;
+	}
+
+	.sub_label {
+		font-weight: 600;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.name {
+		font-weight: 600;
+	}
+
+	.title {
+		text-align: right;
 	}
 
 	.sect {
