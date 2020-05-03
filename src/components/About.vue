@@ -23,20 +23,6 @@
 	display:flex;
 }
 
-@media screen and (min-width: 968px) {
-	.sect p {
-		width: 50%;
-		line-height: 1.5em;
-		margin-right: 4em;
-		margin-bottom: 2em;
-	}
-
-	.sub_label {
-		font-size: 1.5em;
-		margin: 0em 2 2 0;
-	}
-}
-
 @media screen and (max-width: 600px) {
 	.content {
 			display: flex;
@@ -58,5 +44,30 @@
 	.sect {
 		display: inline-block;
 	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.sect p {
+		width: 50%;
+		line-height: 1.5em;
+		margin-right: 4em;
+		margin-bottom: 2em;
+	}
+
+	.sub_label {
+		font-size: 1.5em;
+		margin: 0em 2 2 0;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
 </style>
