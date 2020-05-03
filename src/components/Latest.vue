@@ -45,7 +45,6 @@ h2 {
 
 .content ul li {
 	margin-bottom: 1em;
-	line-height: 1.6;
 }
 
 .crop {

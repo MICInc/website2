@@ -54,7 +54,31 @@ h2 {
   clip-path: circle();
 }
 
-@media screen and (min-width: 968px) {
+@media screen and (max-width: 600px) {
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.content ul {
+		margin: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.sect {
+		display: inline-block;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.sect p {
 		width: 50%;
 		line-height: 1.5em;
@@ -68,18 +92,8 @@ h2 {
 	}
 }
 
-@media screen and (max-width: 600px) {
-	.content {
-		display: flex;
-		flex-direction: column;
-	}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 
-	.content ul {
-		width: 100%;
-	}
-
-	.sect {
-		display: inline-block;
-	}
 }
 </style>

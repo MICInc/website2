@@ -68,6 +68,14 @@
 </script>
 
 <style>
+p {
+	line-height: 1.6;
+}
+
+li {
+	line-height: 1.6;
+}
+
 @media screen and (min-width: 968px) {
 	h1 {
 		text-transform: uppercase;
