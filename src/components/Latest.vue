@@ -76,7 +76,28 @@ h2 {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+	.sect {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 5em;
+		width: 100%;
+		/* background-color: red; */
+	}
 
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		/* background-color: blue; */
+	}
+
+	.content ul {
+		margin: 0;
+		width: 60%;
+		text-align: center;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
