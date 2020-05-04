@@ -130,7 +130,7 @@ h1 {
 		margin: 2em 0;
 		height: auto;
 		display: inline-block;
-		padding-left: 4em;
+		padding: 0 4em 0 4em;
 	}
 
 	.sect h1 {
