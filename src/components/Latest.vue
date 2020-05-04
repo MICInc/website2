@@ -36,6 +36,7 @@ h2 {
 
 .content {
 	display:flex;
+	/* background-color: blue; */
 }
 
 .content ul {
@@ -67,10 +68,6 @@ h2 {
 		width: 100%;
 		text-align: center;
 	}
-
-	.sect {
-		/* display: inline-block; */
-	}
 }
 
 
@@ -82,15 +79,12 @@ h2 {
 		align-items: center;
 		margin-bottom: 5em;
 		width: 100%;
-		/* background-color: red; */
 	}
 
 	.content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 100%;
-		/* background-color: blue; */
 	}
 
 	.content ul {
@@ -102,7 +96,26 @@ h2 {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+	.sect {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 5em;
+		padding: 0;
+		width: 100%;
+	}
 
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.content ul {
+		margin: 0;
+		width: 60%;
+		text-align: center;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
