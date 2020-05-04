@@ -36,7 +36,6 @@ h2 {
 
 .content {
 	display:flex;
-	background-color: blue;
 }
 
 .content ul {
@@ -91,7 +90,6 @@ h2 {
 		margin: 0;
 		width: 80%;
 		text-align: left;
-		background-color: yellow;
 	}
 }
 
@@ -122,17 +120,8 @@ h2 {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	/* .sect {
-		display: flex;
-		margin-bottom: 5em;
-		padding: 0 4em;
-		width: 100%;
-	} */
-
-	.sect .content {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
+	.content {
+		justify-content: space-between;
 	}
 
 	.content ul {
