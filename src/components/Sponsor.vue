@@ -25,7 +25,7 @@
 </script>
 
 <style scoped>
-h2 {
+h1 {
   text-transform: uppercase;
   font-weight: 500;
 }

@@ -76,36 +76,12 @@ li {
 	line-height: 1.6;
 }
 
-@media screen and (min-width: 968px) {
-	h1 {
-		text-transform: uppercase;
-		font-weight: 500;
-		margin: 100px;
-		padding: 0;
-	}
-
-	.sect {
-		margin: 2em 0;
-		height: auto;
-		display: inline-block;
-		padding-left: 4em;
-	}
-
-	.sect h1 {
-		font-size: 3em;
-		margin-bottom: 1em;
-	}
-
-	.sect p {
-		line-height: 1.6;
-		padding-right: 2em;
-	}
+h1 {
+	text-transform: uppercase;
+	font-weight: 500;
+	margin: 100px;
+	padding: 0;
 }
-
-/* @media screen and (min-width: 361px) and (max-width: 1171px) {
-
-} */
-
 
 @media screen and (max-width: 600px) {
 	h1 {
@@ -127,21 +103,52 @@ li {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+	.sect h1 {
+		font-size: 3em;
+		margin-bottom: 1em;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+	.sect {
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		padding: 0 4em 0 4em;
+	}
 
+	.sect h1 {
+		font-size: 3em;
+		margin-bottom: 1em;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+	.sect {
+		margin: 2em 0;
+		height: auto;
+		display: inline-block;
+		padding-left: 4em;
+	}
 
+	.sect h1 {
+		font-size: 3em;
+		margin-bottom: 1em;
+	}
+
+	.sect p {
+		line-height: 1.6;
+		padding-right: 2em;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+	.sect {
+		padding: 0;
+		margin: 0;
+	}
 }
 </style>
