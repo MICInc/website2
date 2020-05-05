@@ -95,13 +95,16 @@
 @media only screen and (min-width: 600px) {
 	.content-img-cap {
 		flex-direction: column-reverse;
+		padding: 2 4 0 4em;
 	}
 
 	.content-cap-img {
 		flex-direction: column;
+		padding: 2em 4em;
 	}
 
 	.caption {
+		width: 100%;
 		margin: 2em 0;
 		font-size: 1.5em;
 	}
