@@ -78,6 +78,10 @@ h1 {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+	.sect {
+		display: flex;
+		flex-direction: column;
+	}
 	.content {
 		margin: 0 4em;
 	}
