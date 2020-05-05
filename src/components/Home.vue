@@ -92,7 +92,7 @@
 	}
 
 	.sect .about {
-		width: 60%;
+		width: 50%;
 		margin: 0;
 	}
 
@@ -101,7 +101,7 @@
 	}
 
 	.sect .title-box {
-		width: 60%;
+		width: 50%;
 		margin: 0;
 	}
 
@@ -143,23 +143,15 @@
 @media only screen and (min-width: 992px) {
 	.sect {
 		margin: 0;
+		padding: 0;
 		display: flex;
 		flex-direction: row;
 		padding-top: 6.7em;
-		margin: 0em;
-	}
-
-	.sect .about {
-		width: 40%;
 		margin: 0;
 	}
 
 	.sect .about p {
 		font-size: 2em;
-	}
-
-	.sect .title-box {
-		width: 50%;
 	}
 
 	.sect .title-box h1 {

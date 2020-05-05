@@ -112,7 +112,6 @@ h1 {
 		margin: 0;
 		display: flex;
 		flex-direction: row;
-		padding: 0 4em 0 4em;
 	}
 
 	.sect h1 {
@@ -127,7 +126,7 @@ h1 {
 		margin: 2em 0;
 		height: auto;
 		display: inline-block;
-		padding: 0 4em 0 4em;
+		background: blue;
 	}
 
 	.sect h1 {

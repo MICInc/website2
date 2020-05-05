@@ -24,7 +24,10 @@ export default {
 
 <style scoped>
 .sect {
-	width: 94vw;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
 	left: 0;
 	bottom: 0;
 	height: 200px;
@@ -50,7 +53,6 @@ export default {
 
 @media screen and (max-width: 600px) {
 	.sect {
-		width: 91vw;
 		max-height: 100px;
 		margin: 0;
 	}
@@ -78,7 +80,11 @@ export default {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+	.sect {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
