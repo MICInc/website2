@@ -30,6 +30,7 @@ export default {
 	height: 200px;
 	color: #FFF;
 	text-transform: uppercase;
+	margin-top: 3em;
 }
 
 #social-media {

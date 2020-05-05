@@ -25,11 +25,6 @@
 </script>
 
 <style scoped>
-h2 {
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
 .header {
   display: flex;
 }
@@ -138,6 +133,8 @@ h2 {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+	.sect {
+		align-items: flex-start;
+	}
 }
 </style>
