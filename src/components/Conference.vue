@@ -240,11 +240,20 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+	.header-sect {
+		display: flex;
+		flex-direction: row;
+		padding-right: 4em;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+	.header-sect {
+		display: flex;
+		flex-direction: row;
+	}
+
 	.content {
 		margin: 0 4em;
 	}
