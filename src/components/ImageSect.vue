@@ -73,13 +73,11 @@
 
 @media screen and (max-width: 600px) {
 	.content-img-cap {
-		display:flex;
 		flex-direction: column-reverse;
 	}
 
 	.content-cap-img {
-		display:flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 	}
 
 	.caption {
@@ -95,7 +93,18 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+	.content-img-cap {
+		flex-direction: column-reverse;
+	}
 
+	.content-cap-img {
+		flex-direction: column;
+	}
+
+	.caption {
+		margin: 2em 0;
+		font-size: 1.5em;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
