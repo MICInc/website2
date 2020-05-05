@@ -81,6 +81,7 @@ h1 {
 	.sect {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 	}
 	.content {
 		margin: 0 4em;
