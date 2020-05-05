@@ -95,7 +95,7 @@
 @media only screen and (min-width: 600px) {
 	.content-img-cap {
 		flex-direction: column-reverse;
-		padding: 2 4 0 4em;
+		padding: 2em 4em;
 	}
 
 	.content-cap-img {
@@ -112,16 +112,43 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+	.content-img-cap {
+		flex-direction: column-reverse;
+		padding: 2em 0;
+	}
 
+	.content-cap-img {
+		flex-direction: column;
+		padding: 2em 0;
+	}
+
+	.caption {
+		width: inherit;
+		margin: 2em 0;
+		font-size: 1.5em;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+	.content-img-cap {
+		flex-direction: column-reverse;
+		padding: 2em 4em;
+	}
 
+	.content-cap-img {
+		flex-direction: column;
+		padding: 2em 4em;
+	}
+
+	.caption {
+		width: 100%;
+		margin: 2em 0;
+		font-size: 1.5em;
+	}
 }
 </style>
