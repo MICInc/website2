@@ -9,7 +9,6 @@
 		<Conference></Conference>
 		<ImageSect :img="images.img3" :capt="captions.capt3.text" :capimg="captions.capt3.rev"></ImageSect>
 		<Sponsor></Sponsor>
-		<Contact></Contact>
 		<Footer></Footer>
 	</div>
 </template>
@@ -20,7 +19,6 @@
 	import Latest from '@/components/Latest'
 	import About from '@/components/About'
 	import Conference from '@/components/Conference'
-	import Contact from '@/components/Contact'
 	import Footer from '@/components/Footer'
 	import ImageSect from '@/components/ImageSect'
 	import Sponsor from '@/components/Sponsor'
@@ -34,7 +32,6 @@
 			About,
 			Conference,
 			Sponsor,
-			Contact,
 			Footer,
 			ImageSect
 		},

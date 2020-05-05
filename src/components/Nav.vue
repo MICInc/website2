@@ -7,7 +7,6 @@
 				<li><a href="#about">about</a></li>
 				<li><a href="#conference">conference</a></li>
 				<li><a href="#sponsor">sponsor</a></li>
-				<li><a href="#contact">contact</a></li>
 			</ul>
 			<Pancake
 				id="pancake"
