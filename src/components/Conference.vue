@@ -49,6 +49,11 @@
 </script>
 
 <style scoped>
+.sect {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2em;
+}
 
 .compress-header {
 	width: 30%;
@@ -158,7 +163,6 @@
 	}
 
 	.committee ul li {
-		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		margin: 10px 0;
@@ -181,12 +185,57 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+	.header-sect {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
 
+	.compress-header {
+			width: 48%;
+			text-align: left;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		margin: 0 4em;
+	}
+
+	.content p {
+		margin-bottom: 1em;
+	}
+
+	.committee {
+		display: flex;
+		margin: 0 4em;
+		padding: 0;
+	}
+
+	.committee .sub_label {
+		width: 100%;
+	}
+
+	.committee ul {
+		justify-content: space-between;
+	}
+
+	.committee ul li {
+		justify-content: space-between;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+	.content {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
 
+	.committee {
+		margin: 0;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -196,6 +245,12 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+	.content {
+		margin: 0 4em;
+	}
 
+	.committee {
+		margin: 0 4em;
+	}
 }
 </style>
