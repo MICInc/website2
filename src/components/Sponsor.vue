@@ -1,6 +1,6 @@
 <template>
 	<div id="sponsor" class="sect">
-    <h1>Sponsor</h1>
+    <h1>sponsor</h1>
 		<div class="content">
 			<ul>
 				<li v-for="(l,i) in latest" :key="i">{{ l.date }}  {{ l.content }}</li>
@@ -28,6 +28,10 @@
 h1 {
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.sect {
+	display: flex;
 }
 
 .header {
@@ -74,31 +78,30 @@ h1 {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+	.content {
+		margin: 0 4em;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+	.sect {
+		flex-direction: column;
+	}
 
+	.content {
+		margin: 0;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	.sect p {
-		width: 50%;
-		line-height: 1.5em;
-		margin-right: 4em;
-		margin-bottom: 2em;
-	}
-
-	.sub_label {
-		font-size: 1.5em;
-		margin: 0em 2 2 0;
-	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+	.sect {
+		margin: 0 4em;
+	}
 }
 </style>
