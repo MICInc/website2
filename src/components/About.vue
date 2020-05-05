@@ -30,7 +30,6 @@
 
 @media screen and (max-width: 600px) {
 	.content {
-			display: flex;
 			flex-direction: column;
 	}
 
@@ -60,7 +59,6 @@
 	}
 
 	.content {
-		display: flex;
 		flex-direction: column;
 	}
 
@@ -71,7 +69,6 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
 	.content {
 		margin-bottom: 4em;
 
@@ -85,16 +82,12 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	.sect p {
-		width: 50%;
-		line-height: 1.5em;
-		margin-right: 4em;
-		margin-bottom: 2em;
+	.content {
+			flex-direction: row;
 	}
 
-	.content {
-		display: flex;
-		flex-direction: row;
+	.content p {
+		width: 100%;
 	}
 
 	.sub_label {
@@ -105,6 +98,12 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+	.content {
+			flex-direction: row;
+	}
 
+	.content p {
+		margin: 0 4em;
+	}
 }
 </style>
