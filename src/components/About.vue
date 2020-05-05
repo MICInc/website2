@@ -2,11 +2,8 @@
 	<div id="about" class="sect">
 		<h1>about</h1>
 		<div class="content">
-			<p>
-				<span class="sub_label">Mission</span>&emsp;MIC, Inc. is a 501(c)(3) non-profit organization focused on democratizing machine intelligence through education, research and community by providing opportunities to learn in a community environment, connect communities with resources and industry practitioners to foster the future leaders in machine intelligence.
-			</p>
-			<p>
-				<span class="sub_label">History</span>&emsp;Machine Intelligence Community, Inc. (MIC) originated from the MIT Machine Learning Reading Group, which was formed by undergraduate students in 2016 looking for an environment to learn about research advances in machine learning outside the classroom. Three years later, MIC, Inc. helped develop four successful student communities at MIT, Boston University, Harvard College and SRM Institute of Science and Technology, which are now independently leading their own initiatives separate from the nonprofit.
+			<p v-for="(l,i) in about" :key="i">
+				<span class="sub_label">{{ l.heading }}</span>&emsp;{{ l.text }}
 			</p>
 		</div>
 	</div>
@@ -14,7 +11,15 @@
 
 <script>
 	export default {
-		name: 'about'
+		name: 'about',
+		data() {
+			return {
+				about: [
+					{'heading': 'Mission', 'text': 'MIC, Inc. is a 501(c)(3) non-profit organization focused on democratizing machine intelligence through education, research and community by providing opportunities to learn in a community environment, connect communities with resources and industry practitioners to foster the future leaders in machine intelligence.'},
+					{'heading': 'History', 'text': 'Machine Intelligence Community, Inc. (MIC) originated from the MIT Machine Learning Reading Group, which was formed by undergraduate students in 2016 looking for an environment to learn about research advances in machine learning outside the classroom. Three years later, MIC, Inc. helped develop four successful student communities at MIT, Boston University, Harvard College and SRM Institute of Science and Technology, which are now independently leading their own initiatives separate from the nonprofit.'}
+				]
+			}
+		}
 	}
 </script>
 
@@ -48,12 +53,34 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+	.sect {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
+	.content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content p {
+		margin: 0 4em 1em 4em;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+	.content {
+		margin-bottom: 4em;
+
+	}
+
+	.content p {
+		margin: 0;
+		margin-bottom: 1em;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -63,6 +90,11 @@
 		line-height: 1.5em;
 		margin-right: 4em;
 		margin-bottom: 2em;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: row;
 	}
 
 	.sub_label {
