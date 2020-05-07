@@ -1,6 +1,8 @@
 <template>
 	<div id="latest" class="sect">
-    <h1>Latest</h1>
+		<div class="header">
+    	<h1>Latest</h1>
+		</div>
 		<div class="content">
 			<ul>
 				<li v-for="(l,i) in latest" :key="i">{{ l.date }}  {{ l.content }}</li>
@@ -134,7 +136,20 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 	.sect {
-		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.content ul {
+		margin-left: 1em;
+		width: 40%;
 	}
 }
 </style>

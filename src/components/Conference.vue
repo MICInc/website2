@@ -1,20 +1,24 @@
 <template>
 	<div id="conference" class="sect">
 		<div class="header-sect">
-			<h1 class="compress-header">machine intelligence conference</h1>
-			<a href="/register" target="_blank"><button class="btn">register</button></a>
-		</div>
-		<div class="conf-info">
-			<table>
-				<tr class="conf-location">
-					<td>Location</td>
-					<td>virtual</td>
-				</tr>
-				<tr class="conf-date">
-					<td>Date</td>
-					<td>September 26, 2020</td>
-				</tr>
-			</table>
+			<div class="header-info">
+				<h1 class="compress-header">machine intelligence conference</h1>
+				<div class="conf-info">
+					<table>
+						<tr class="conf-location">
+							<td>Location</td>
+							<td>virtual</td>
+						</tr>
+						<tr class="conf-date">
+							<td>Date</td>
+							<td>September 26, 2020</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="conf-register">
+				<a href="/register" target="_blank"><button class="btn">register</button></a>
+			</div>
 		</div>
 		<div class="content">
 			<p>
@@ -69,6 +73,8 @@
 
 .compress-header {
 	width: 30%;
+	margin: 0;
+	padding: 0 4em;
 }
 
 .header-sect {
@@ -77,7 +83,14 @@
 	align-items: center;
 }
 
-.header-sect button {
+.conf-register {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding-bottom: 2em;
+}
+
+.conf-register button {
 	display: block;
 	width: 17em;
 	height: 5em;
@@ -92,7 +105,7 @@
 	border-radius: 25px;
 }
 
-.header-sect button:hover {
+.conf-register button:hover {
 	cursor: pointer;
 }
 
@@ -257,7 +270,29 @@
 	.header-sect {
 		display: flex;
 		flex-direction: row;
-		padding-right: 4em;
+	}
+
+	.header-info {
+		padding-left: 4em;
+	}
+	.header-info .compress-header {
+		margin: 0;
+		padding: 0;
+		margin-bottom: 1em;
+	}
+
+	.conf-info {
+		padding-bottom: 2em;
+	}
+
+	.conf-info table {
+		width: 100%;
+	}
+
+	.conf-info table tr td {
+		font-size: 2em;
+		font-weight: 500;
+		text-transform: uppercase;
 	}
 }
 
@@ -266,14 +301,29 @@
 	.header-sect {
 		display: flex;
 		flex-direction: row;
+		padding-top: 4em;
+	}
+
+	.header-info {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		/* margin-left: 4em; */
+	}
+
+	.compress-header {
+		margin-bottom: 1em;
+		padding: 0;
 	}
 
 	.conf-info {
-		padding: 0 4em 2em 4em;
+		width: 100%;
+		height: 100%;
+		padding: 0;
 	}
 
 	.conf-info table {
-		width: 50%;
+		width: 100%;
 	}
 
 	.conf-info table tr td {
@@ -284,12 +334,12 @@
 
 	.content {
 		margin: 0;
-		padding: 0 4em;
+		padding-right: 4em;
 	}
 
 	.committee {
 		margin: 0;
-		padding: 0 4em;
+		padding-right: 4em;
 	}
 }
 </style>

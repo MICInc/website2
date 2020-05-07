@@ -126,10 +126,12 @@ h1 {
 	.content {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
 	}
 
 	.content ul {
 		margin-left: 1em;
+		width: 40%;
 	}
 }
 </style>

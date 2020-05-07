@@ -33,7 +33,6 @@ export default {
 	height: 200px;
 	color: #FFF;
 	text-transform: uppercase;
-	margin-top: 3em;
 }
 
 #social-media {
@@ -70,25 +69,37 @@ export default {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+	.sect {
+		margin: 0;
+		padding-top: 4em;
+		width: 100%;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+	.sect {
+		margin: 0;
+		padding-top: 4em;
+		width: 100%;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	.sect {
 		margin: 0;
-		padding: 0;
+		padding-top: 4em;
 		width: 100%;
 	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+	.sect {
+		margin: 0;
+		padding-top: 4em;
+		width: 100%;
+	}
 }
 </style>

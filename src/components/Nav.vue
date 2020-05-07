@@ -56,7 +56,7 @@
 			},
 			change_bg() {
 				if(screen.width >= 600) {
-					if(window.scrollY > 93) {
+					if(window.scrollY > 75) {
 						let menu = document.getElementById("menu");
 						menu.style.display = "none";
 						document.getElementById("main-nav").style.pointerEvents = "none";
