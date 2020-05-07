@@ -75,7 +75,7 @@
 	}
 
 	.content p {
-		margin: 0;
+		margin: 0 4em;
 		margin-bottom: 1em;
 	}
 }
