@@ -165,6 +165,22 @@
 		margin-bottom: 20px;
 	}
 
+	.conf-info {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+	}
+
+	.conf-info table {
+		width: 100%;
+	}
+
+	.conf-info table tr td {
+		font-size: 2em;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
 	.content {
 		display: flex;
 		flex-direction: column;
@@ -217,8 +233,24 @@
 	}
 
 	.compress-header {
-			width: 48%;
-			text-align: left;
+		width: 48%;
+		text-align: left;
+	}
+
+	.conf-info {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+	}
+
+	.conf-info table {
+		width: 100%;
+	}
+
+	.conf-info table tr td {
+		font-size: 2em;
+		font-weight: 500;
+		text-transform: uppercase;
 	}
 
 	.content {
@@ -252,6 +284,22 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+	.conf-info {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+	}
+
+	.conf-info table {
+		width: 100%;
+	}
+
+	.conf-info table tr td {
+		font-size: 2em;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
 	.content {
 		display: flex;
 		flex-direction: column;
