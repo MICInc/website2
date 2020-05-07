@@ -1,8 +1,20 @@
 <template>
 	<div id="conference" class="sect">
 		<div class="header-sect">
-			<h1 class="compress-header">virtual machine intelligence conference</h1>
+			<h1 class="compress-header">machine intelligence conference</h1>
 			<a href="/register" target="_blank"><button class="btn">register</button></a>
+		</div>
+		<div class="conf-info">
+			<table>
+				<tr class="conf-location">
+					<td>Location</td>
+					<td>virtual</td>
+				</tr>
+				<tr class="conf-date">
+					<td>Date</td>
+					<td>September 26, 2020</td>
+				</tr>
+			</table>
 		</div>
 		<div class="content">
 			<p>
@@ -254,6 +266,20 @@
 	.header-sect {
 		display: flex;
 		flex-direction: row;
+	}
+
+	.conf-info {
+		padding: 0 4em 2em 4em;
+	}
+
+	.conf-info table {
+		width: 50%;
+	}
+
+	.conf-info table tr td {
+		font-size: 2em;
+		font-weight: 500;
+		text-transform: uppercase;
 	}
 
 	.content {
