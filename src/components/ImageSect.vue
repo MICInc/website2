@@ -113,24 +113,41 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	.content-img-cap {
-		flex-direction: column-reverse;
+		flex-direction: row-reverse;
 		padding: 2em 4em;
 	}
 
 	.content-cap-img {
-		flex-direction: column;
+		flex-direction: row;
 		padding: 2em 4em;
 	}
 
 	.caption {
-		width: inherit;
+		width: 100%;
 		margin: 2em 0;
 		font-size: 1.5em;
+		width: 40%;
 	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+	.content-img-cap {
+		flex-direction: row-reverse;
+		padding: 2em 4em;
+	}
+
+	.content-cap-img {
+		flex-direction: row;
+		padding: 2em 4em;
+	}
+
+	.caption {
+		width: 100%;
+		margin: 2em 0;
+		font-size: 1.5em;
+		width: 40%;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
