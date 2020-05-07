@@ -114,12 +114,12 @@
 @media only screen and (min-width: 768px) {
 	.content-img-cap {
 		flex-direction: column-reverse;
-		padding: 2em 0;
+		padding: 2em 4em;
 	}
 
 	.content-cap-img {
 		flex-direction: column;
-		padding: 2em 0;
+		padding: 2em 4em;
 	}
 
 	.caption {
