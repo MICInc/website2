@@ -96,6 +96,7 @@ h1 {
 
 	.content {
 		margin: 0;
+		padding: 0 4em;
 	}
 }
 
