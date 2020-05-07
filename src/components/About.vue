@@ -75,7 +75,8 @@
 	}
 
 	.content p {
-		margin: 0 4em;
+		margin: 0;
+		padding: 0 4em;
 		margin-bottom: 1em;
 	}
 }
@@ -99,11 +100,13 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 	.content {
-			flex-direction: row;
+		display: flex;
+		flex-direction: row;
 	}
 
 	.content p {
-		margin: 0 4em;
+		margin: 0;
+		padding: 0 4em;
 	}
 }
 </style>

@@ -126,7 +126,6 @@ h1 {
 		margin: 2em 0;
 		height: auto;
 		display: inline-block;
-		background: blue;
 	}
 
 	.sect h1 {

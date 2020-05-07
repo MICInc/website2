@@ -116,13 +116,14 @@
 	.sect {
 		margin: 0;
 		display: flex;
-		flex-direction: row;
-		padding-top: 6.7em;
-		margin-bottom: 8em;
+		flex-direction: column-reverse;
+		justify-content: center;
+		padding: 6em 4em 0 4em;
+		margin: 3em 0 4em 0;
 	}
 
 	.sect .about {
-		width: 40%;
+		width: 50%;
 		margin: 0;
 	}
 
@@ -133,25 +134,27 @@
 	.sect .title-box {
 		width: 50%;
 	}
-
-	.sect .title-box h1 {
-		text-align: right;
-	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	.sect {
-		margin: 0;
-		padding: 0;
 		display: flex;
 		flex-direction: row;
-		padding-top: 6.7em;
+		padding: 6em 0 4em 4em;
 		margin: 0;
 	}
 
-	.sect .about p {
+	.sect .about {
+		width: 40%;
+	}
+
+	.about p {
 		font-size: 2em;
+	}
+
+	.sect .title-box {
+		width: 40%;
 	}
 
 	.sect .title-box h1 {
@@ -162,14 +165,15 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 	.sect {
+		display: flex;
 		flex-direction: row;
-		padding-top: 6.7em;
+		padding: 7em 0 2em 0;
 		margin: 0;
 		justify-content: center;
 	}
 
 	.sect .title-box {
-		width: 60%;
+		width: 40%;
 	}
 
 	.sect .title-box h1 {

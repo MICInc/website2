@@ -83,8 +83,19 @@ h1 {
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.content {
-		margin: 0 4em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		padding: 0 4em;
+	}
+
+	.content ul {
+		margin: 0;
+		width: 100%;
+		text-align: left;
 	}
 }
 
@@ -107,7 +118,18 @@ h1 {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 	.sect {
-		margin: 0 4em;
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.content ul {
+		margin-left: 1em;
 	}
 }
 </style>

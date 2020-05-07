@@ -257,11 +257,13 @@
 	}
 
 	.content {
-		margin: 0 4em;
+		margin: 0;
+		padding: 0 4em;
 	}
 
 	.committee {
-		margin: 0 4em;
+		margin: 0;
+		padding: 0 4em;
 	}
 }
 </style>
