@@ -3,11 +3,11 @@
 		<Nav></Nav>
 		<Home></Home>
 		<Latest></Latest>
-		<ImageSect :img="images.img1" :capt="captions.capt1.text" :capimg="captions.capt1.rev"></ImageSect>
+		<ImageSect :img="sect[0].img" :capt="sect[0].text" :capimg="sect[0].rev"></ImageSect>
 		<About></About>
-		<ImageSect :img="images.img2" :capt="captions.capt2.text" :capimg="captions.capt2.rev"></ImageSect>
+		<ImageSect :img="sect[1].img" :capt="sect[1].text" :capimg="sect[1].rev"></ImageSect>
 		<Conference></Conference>
-		<ImageSect :img="images.img3" :capt="captions.capt3.text" :capimg="captions.capt3.rev"></ImageSect>
+		<ImageSect :img="sect[2].img" :capt="sect[2].text" :capimg="sect[2].rev"></ImageSect>
 		<Sponsor></Sponsor>
 		<Footer></Footer>
 	</div>
@@ -22,6 +22,7 @@
 	import Footer from '@/components/Footer'
 	import ImageSect from '@/components/ImageSect'
 	import Sponsor from '@/components/Sponsor'
+	import sections from '@/json/imagesects.json'
 
 	export default {
 		name: 'index',
@@ -37,25 +38,7 @@
 		},
 		data () {
 			return {
-				images: {
-					'img1': 'wiml2.jpg',
-					'img2': 'wiml.jpg',
-					'img3': 'kenneth.jpg'
-				},
-				captions: {
-					'capt1': {
-						'text': 'Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet. Placerat lorem velit id lorem sit, eros at eget enim, vestibulum diam imperdiet vitae suscipit nonummy, tempus sed consequat enim ligula sit at, fusce justo cras nulla et.',
-						'rev': false
-					},
-					'capt2': {
-						'text': 'Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet. Placerat lorem velit id lorem sit, eros at eget enim, vestibulum diam imperdiet vitae suscipit nonummy, tempus sed consequat enim ligula sit at, fusce justo cras nulla et.',
-						'rev': true
-					},
-					'capt3': {
-						'text': 'Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet. Placerat lorem velit id lorem sit, eros at eget enim, vestibulum diam imperdiet vitae suscipit nonummy, tempus sed consequat enim ligula sit at, fusce justo cras nulla et.',
-						'rev': false
-					}
-				}
+				sect: sections
 			}
 		},
 		methods: {

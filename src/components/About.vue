@@ -6,16 +6,22 @@
 				<span class="sub_label">{{ l.heading }}</span>&emsp;{{ l.text }}
 			</p>
 		</div>
+		<div class="bod">
+			<h1>Board of Directors</h1>
+			<img>
+		</div>
 	</div>
 </template>
 
 <script>
 	import content from '@/json/about.json'
+	import board from '@/json/bod.json'
 	export default {
 		name: 'about',
 		data() {
 			return {
-				about: content
+				about: content,
+				bod: board
 			}
 		}
 	}
