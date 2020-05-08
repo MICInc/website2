@@ -234,11 +234,32 @@
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 20px;
+		padding: 0 11em;
 	}
 
-	.compress-header {
-		width: 48%;
+	.header-info {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header-info .compress-header {
+		margin: 0;
+		padding: 0;
+		display: flex;
 		text-align: left;
+	}
+
+	.conf-info {
+		margin: 1em 0;
+		padding: 0;
+	}
+
+	.conf-info table tr td {
+		width: 20%;
+		font-size: 1.2em;
+		font-weight: 500;
+		text-transform: uppercase;
 	}
 
 	.conf-info {

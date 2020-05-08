@@ -78,7 +78,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 5em;
 		width: 100%;
 	}
 
@@ -101,7 +100,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 5em;
 		padding: 0;
 		width: 100%;
 	}

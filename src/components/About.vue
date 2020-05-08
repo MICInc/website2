@@ -69,11 +69,6 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-	.content {
-		margin-bottom: 4em;
-
-	}
-
 	.content p {
 		margin: 0;
 		padding: 0 4em;
