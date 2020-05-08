@@ -8,11 +8,12 @@
 		</div>
 		<div class="board">
 			<h1>Board of Directors</h1>
-			<div class="director" v-for="(d,i) in bod" :key="i">
-				<h2>{{ d.name }}</h2>
-				<img :src="d.img">
-				<p class="">{{ d.text }}
-				</p>
+			<div class="director">
+				<div class="info" v-for="(d,i) in bod" :key="i">
+					<img class="crop" :src="'assets/img/'+d.img">
+					<h2>{{ d.name }}</h2>
+					<p>{{ d.text }}</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -35,6 +36,12 @@
 <style scoped>
 .content {
 	display:flex;
+}
+
+.crop {
+  width: 100px;
+  height: auto;
+  clip-path: circle();
 }
 
 @media screen and (max-width: 600px) {
@@ -111,6 +118,29 @@
 	.content p {
 		margin: 0;
 		padding: 0 4em;
+	}
+
+	.director {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.director .info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 25%;
+	}
+
+	.director .info h2 {
+		font-weight: 600;
+		font-size: 1.2em;
+		text-transform: uppercase;
+	}
+
+	.director .info p {
+		text-align: center;
 	}
 }
 </style>
