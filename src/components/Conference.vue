@@ -6,11 +6,9 @@
 				<div class="conf-info">
 					<table>
 						<tr class="conf-location">
-							<td>Location</td>
-							<td>virtual</td>
+							<td>virtual format</td>
 						</tr>
 						<tr class="conf-date">
-							<td>Date</td>
 							<td>September 26, 2020</td>
 						</tr>
 					</table>
@@ -155,28 +153,34 @@
 }
 
 @media screen and (max-width: 600px) {
-	.compress-header {
-			width: 100%;
-	}
-
 	.header-sect {
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 20px;
+		padding: 0 7em;
+	}
+
+	.header-info {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header-info .compress-header {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		text-align: left;
 	}
 
 	.conf-info {
-		width: 100%;
-		height: 100%;
+		margin: 1em 0;
 		padding: 0;
 	}
 
-	.conf-info table {
-		width: 100%;
-	}
-
 	.conf-info table tr td {
-		font-size: 2em;
+		width: 20%;
+		font-size: 1.2em;
 		font-weight: 500;
 		text-transform: uppercase;
 	}

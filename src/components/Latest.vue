@@ -53,6 +53,11 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 600px) {
+	.header {
+		display: flex;
+		justify-content: center;
+	}
+
 	.content {
 		display: flex;
 		flex-direction: column;
