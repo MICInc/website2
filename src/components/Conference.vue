@@ -156,12 +156,12 @@
 	.header-sect {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		margin-bottom: 20px;
-		padding: 0 7em;
 	}
 
 	.header-info {
-		width: 100%;
+		width: 50%;
 		display: flex;
 		flex-direction: column;
 	}
@@ -234,13 +234,13 @@
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 20px;
-		padding: 0 11em;
+		padding: 0 4em;
 	}
 
 	.header-info {
-		width: 100%;
 		display: flex;
 		flex-direction: column;
+		width: 50%;
 	}
 
 	.header-info .compress-header {
@@ -252,24 +252,6 @@
 
 	.conf-info {
 		margin: 1em 0;
-		padding: 0;
-	}
-
-	.conf-info table tr td {
-		width: 20%;
-		font-size: 1.2em;
-		font-weight: 500;
-		text-transform: uppercase;
-	}
-
-	.conf-info {
-		width: 100%;
-		height: 100%;
-		padding: 0;
-	}
-
-	.conf-info table {
-		width: 100%;
 	}
 
 	.conf-info table tr td {
@@ -309,6 +291,13 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+	.header-info {
+		margin: 0;
+		padding: 0;
+		width: 50%;
+	}
+
 	.conf-info {
 		width: 100%;
 		height: 100%;
