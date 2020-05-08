@@ -6,9 +6,14 @@
 				<span class="sub_label">{{ l.heading }}</span>&emsp;{{ l.text }}
 			</p>
 		</div>
-		<div class="bod">
+		<div class="board">
 			<h1>Board of Directors</h1>
-			<img>
+			<div class="director" v-for="(d,i) in bod" :key="i">
+				<h2>{{ d.name }}</h2>
+				<img :src="d.img">
+				<p class="">{{ d.text }}
+				</p>
+			</div>
 		</div>
 	</div>
 </template>
