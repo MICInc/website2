@@ -118,7 +118,7 @@
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: center;
-		padding: 6em 4em 0 4em;
+		padding: 6em 0 0 0;
 		margin: 3em 0 4em 0;
 	}
 
