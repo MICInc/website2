@@ -12,7 +12,7 @@
 				<div class="info" v-for="(d,i) in bod" :key="i">
 					<img class="crop" :src="'assets/img/'+d.img">
 					<h2>{{ d.name }}</h2>
-					<p>{{ d.text }}</p>
+					<!-- <p>{{ d.text }}</p> -->
 				</div>
 			</div>
 		</div>
@@ -124,19 +124,20 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		margin-bottom: 4em;
 	}
 
 	.director .info {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 25%;
 	}
 
 	.director .info h2 {
 		font-weight: 600;
 		font-size: 1.2em;
 		text-transform: uppercase;
+		margin-top: 1em;
 	}
 
 	.director .info p {

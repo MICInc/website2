@@ -1,17 +1,17 @@
 [
   {
     "name": "Ajay Jain",
-    "text": "Ajay is a PhD student at UC Berkeley, affiliated with Berkeley Artificial Intelligence Research. He works on machine learning and performance optimization, with a special interest in generative modeling. At Berkeley, he is advised by Pieter Abbeel and Joseph Gonzalez and is supported by an NSF GRFP Fellowship. In Spring 2019, he graduated from MIT with an S.B. in Computer Science, where he was fortunate to be advised by Saman Amarasinghe and affiliated with the MIT COMMIT lab. He has also had the good fortune of working with Raquel Urtasun at Uber ATG. If you go to MIT, you've likely received an email from him at some point about a machine learning reading group or talk -- from 2017-2018, he was the co-president of MIT MIC, and volunteered his time by ordering a tremendous amount of pizza to entice students to read papers together. Now, he sits on the board of the non-profit Machine Intelligence Community. In the past, he organized HackMIT and Blueprint.",
+    "text": "Ajay is a PhD student at UC Berkeley, affiliated with Berkeley Artificial Intelligence Research. At Berkeley, he is advised by Pieter Abbeel and Joseph Gonzalez and is supported by an NSF GRFP Fellowship. In Spring 2019, he graduated from MIT with an S.B. in Computer Science, where he was fortunate to be advised by Saman Amarasinghe and affiliated with the MIT COMMIT lab. He has also had the good fortune of working with Raquel Urtasun at Uber ATG. From 2017-2018, he was the co-president of MIT MIC.",
     "img": "ajay.jpg"
   },
   {
     "name": "Jackie Xu",
-    "text": "Jackie Xu is a recent graduate from MIT, with a Bachelors in Computer Science and a Masters of Engineering in Artificial Intelligence. She will be joining Facebook as a software engineer. Jackie has previously researched at the Computational Cognitive Science group with Prof. Josh Tenenbaum and at the Affective Computing group with Prof. Rosalind Picard. Her interests include how AI can be applied to social issues and bettering public understanding of AI technologies.",
+    "text": "Jackie Xu graduated from MIT in 2018 with a Bachelors in Computer Science and a Masters of Engineering in Artificial Intelligence. She is currently a software engineer at Facebook. Jackie has previously researched at the Computational Cognitive Science group with Prof. Josh Tenenbaum and at the Affective Computing group with Prof. Rosalind Picard. Her interests include how AI can be applied to social issues and bettering public understanding of AI technologies.",
     "img": "jackie.jpg"
   },
   {
     "name": "Justin Chen",
-    "text": "Justin first learned the words \"artificial intelligence\" from his aunt when he was seven and has been dreaming of a anime-inspired future ever since. He received both his Bachelor of Arts and Master of Science degrees in computer science from Boston University. During his graduate studies, he extensively researched decentralized asynchronous gradient-based optimization for deep neural networks. When not in class or doing research, he focused intensely on founding the Boston University Machine Intelligence Community. Today, he is a director and co-founder of the Machine Intelligence Community, Inc., which is a non-profit corporation in the process of becoming 501(c)(3), dedicated to democratizing machine intelligence by connecting communities, promoting diversity, providing mentorship, and developing educational material to empower the future leaders in machine intelligence.",
+    "text": "Justin received both his Bachelor of Arts and Master of Science degrees in computer science from Boston University. During his masters, he found the Boston University Machine Intelligence Community and co-founded the non-profit Machine Intelligence Community, Inc. where he now is a director.",
     "img": "justin.jpg"
   },
   {
