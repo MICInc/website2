@@ -5,7 +5,10 @@
 		</div>
 		<div class="content">
 			<ul>
-				<li v-for="(l,i) in latest" :key="i">{{ l.date }}  {{ l.content }}</li>
+				<li v-for="(l,i) in latest" :key="i">
+					<span class="date">{{ l.date }}</span>
+					<span class="update">{{ l.content }}</span>
+				</li>
 			</ul>
 			<img class="crop" src="assets/img/alums.jpg">
 		</div>
@@ -13,14 +16,12 @@
 </template>
 
 <script>
+	import update from '@/json/updates.json'
 	export default {
 		name: 'latest',
 		data() {
 			return {
-				latest: [
-					{"date": "5.1.2020", "content": "Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet.Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet."},
-					{"date": "5.1.2020", "content": "Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet.Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet."}
-				]
+				latest: update
 			}
 		}
 	}
@@ -35,13 +36,14 @@
 	display:flex;
 }
 
-.content ul {
-	width: 50%;
-	margin-right: 3em;
+.content ul li {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1em;
 }
 
-.content ul li {
-	margin-bottom: 1em;
+.date {
+	font-weight: 600;
 }
 
 .crop {
@@ -126,7 +128,7 @@
 
 	.content ul {
 		margin: 0;
-		width: 50%;
+		width: 100%;
 		text-align: left;
 	}
 
@@ -151,8 +153,8 @@
 	}
 
 	.content ul {
-		margin-left: 1em;
-		width: 40%;
+		margin: 0 1em;
+		width: 100%;
 	}
 }
 </style>
