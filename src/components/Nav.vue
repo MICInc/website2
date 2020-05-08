@@ -36,7 +36,8 @@
 			return {
 				pancake: false,
 				menu: false,
-				scroll_pos: null
+				scroll_pos: null,
+				width: -1
 			}
 		},
 		methods: {
@@ -55,7 +56,7 @@
 				}
 			},
 			change_bg() {
-				if(screen.width >= 600) {
+				if(this.get_width() >= 600) {
 					if(window.scrollY > 75) {
 						let menu = document.getElementById("menu");
 						menu.style.display = "none";
@@ -69,6 +70,19 @@
 						document.getElementById("main-nav").style.pointerEvents = "all";
 					}
 				}
+			},
+			/*
+			source:
+			https://stackoverflow.com/questions/1038727/how-to-get-browser-width-using-javascript-code
+			*/
+			get_width() {
+				return Math.max(
+					document.body.scrollWidth,
+					document.documentElement.scrollWidth,
+					document.body.offsetWidth,
+					document.documentElement.offsetWidth,
+					document.documentElement.clientWidth
+				);
 			}
 		},
 		mounted() {
@@ -145,10 +159,6 @@ li {
 	transition: color 0.5s ease-in-out;
 }
 
-#pancake {
-	display: none;
-}
-
 @media screen and (max-width: 600px) {
 	.default-nav {
 		padding: 10px 0;
@@ -200,7 +210,9 @@ li {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+	#pancake {
+		display: none;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

@@ -150,7 +150,7 @@ h1 {
 	.content {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 	}
 
 	.content ul {
