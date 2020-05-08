@@ -141,7 +141,7 @@
 	.sect {
 		display: flex;
 		flex-direction: row;
-		padding: 6em 0 4em 4em;
+		padding: 6em 0 4em 0;
 		margin: 0;
 	}
 
