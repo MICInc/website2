@@ -107,13 +107,13 @@
 	.content {
 		display: flex;
 		flex-direction: row;
-		align-items: flex-start;
+		justify-content: space-between;
 		margin: 0 4em;
 	}
 
 	.content ul {
 		margin: 0;
-		width: 84%;
+		width: 50%;
 		text-align: left;
 	}
 }

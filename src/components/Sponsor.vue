@@ -102,17 +102,41 @@ h1 {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	.sect {
+		display: flex;
 		flex-direction: column;
+		margin: 0;
 	}
 
 	.content {
-		margin: 0;
-		padding: 0 4em;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.content ul {
+		margin-left: 1em;
+		width: 50%;
 	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+	.sect {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.content ul {
+		margin-left: 1em;
+		width: 50%;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -126,12 +150,12 @@ h1 {
 	.content {
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: space-between;
 	}
 
 	.content ul {
 		margin-left: 1em;
-		width: 40%;
+		width: 50%;
 	}
 }
 </style>
