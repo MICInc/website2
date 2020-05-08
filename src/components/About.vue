@@ -11,8 +11,7 @@
 			<div class="director">
 				<div class="info" v-for="(d,i) in bod" :key="i">
 					<img class="crop" :src="'assets/img/'+d.img">
-					<h2>{{ d.name }}</h2>
-					<!-- <p>{{ d.text }}</p> -->
+					<h2><a :href="d.contact" target="_blank">{{ d.name }}</a></h2>
 				</div>
 			</div>
 		</div>
@@ -137,7 +136,6 @@
 		font-weight: 600;
 		font-size: 1.2em;
 		text-transform: uppercase;
-		margin-top: 1em;
 	}
 
 	.director .info p {
