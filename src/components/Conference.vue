@@ -122,6 +122,8 @@
 	font-weight: 600;
 	margin-top: 1.5em;
 	text-align: center;
+	font-size: 2em;
+	text-transform: uppercase;
 }
 
 .name {
