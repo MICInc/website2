@@ -1,24 +1,20 @@
 <template>
 	<div id="sponsor" class="sect">
-    <h1>sponsor</h1>
+    <h1>our sponsors</h1>
+		<h2>2018-2020</h2>
 		<div class="content">
-			<ul>
-				<li v-for="(l,i) in latest" :key="i">{{ l.date }}  {{ l.content }}</li>
-			</ul>
-			<img class="crop" src="assets/img/sponsor.jpg">
+			<img class="crop" v-for="(img, i) in images" :src="'assets/img/'+img.src" :key="i">
 		</div>
 	</div>
 </template>
 
 <script>
+	import data from '@/json/sponsors.json'
 	export default {
 		name: 'sponsor',
 		data() {
 			return {
-				latest: [
-					{"date": "5.1.2020", "content": "Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet.Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet."},
-					{"date": "5.1.2020", "content": "Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet.Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet."}
-				]
+				images: data
 			}
 		}
 	}
@@ -28,6 +24,15 @@
 h1 {
   text-transform: uppercase;
   font-weight: 500;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+h2 {
+	margin: 0 0 1em 0;
+	padding: 0;
+	font-weight: 500;
+	font-size: 2em;
 }
 
 .sect {
@@ -40,22 +45,14 @@ h1 {
 
 .content {
 	display:flex;
-}
-
-.content ul {
-	width: 50%;
-	margin-right: 3em;
-}
-
-.content ul li {
-	margin-bottom: 1em;
-	line-height: 1.6;
+	flex-wrap:wrap;
+	justify-content: space-between;
 }
 
 .crop {
-  width: 300px;
-  height: auto;
-  clip-path: circle();
+	max-height: 80px;
+  max-width: 300px;
+	margin: 0 20px 20px 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -63,12 +60,6 @@ h1 {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-
-	.content ul {
-		margin: 0;
-		width: 100%;
-		text-align: center;
 	}
 
 	.sect {
@@ -91,12 +82,6 @@ h1 {
 		margin: 0;
 		padding: 0 4em;
 	}
-
-	.content ul {
-		margin: 0;
-		width: 100%;
-		text-align: left;
-	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -111,11 +96,6 @@ h1 {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-	}
-
-	.content ul {
-		margin-left: 1em;
-		width: 50%;
 	}
 }
 
@@ -132,11 +112,6 @@ h1 {
 		flex-direction: row;
 		justify-content: space-between;
 	}
-
-	.content ul {
-		margin-left: 1em;
-		width: 50%;
-	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -151,11 +126,6 @@ h1 {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-	}
-
-	.content ul {
-		margin-left: 1em;
-		width: 50%;
 	}
 }
 </style>

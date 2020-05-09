@@ -1,17 +1,17 @@
 [
   {
-    "img": "wiml2.jpg",
-    "text": "Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet. Placerat lorem velit id lorem sit, eros at eget enim, vestibulum diam imperdiet vitae suscipit nonummy, tempus sed consequat enim ligula sit at, fusce justo cras nulla et.",
+    "img": "wimi2.jpg",
+    "text": "IBM Women in Machine Intelligence Panel 2019: Professor Magy Seif El-Nasr (Northeastern University), Rosanne Liu (Uber AI), Isha Puri (Harvard University)",
     "rev": false
   },
   {
-    "img": "wiml.jpg",
-    "text": "Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet. Placerat lorem velit id lorem sit, eros at eget enim, vestibulum diam imperdiet vitae suscipit nonummy, tempus sed consequat enim ligula sit at, fusce justo cras nulla et.",
+    "img": "wimi.jpg",
+    "text": "Women in Machine Intelligence Panel 2018: Kate Saenko (Boston University), Jacqueline Xu (Facebook), Sophie Watson (RedHat), Millie Liu (First Star)",
     "rev": true
   },
   {
     "img": "kenneth.jpg",
-    "text": "Lorem ipsum dolor sit amet, ac in eu, dictum rerum a libero. Ac amet. Placerat lorem velit id lorem sit, eros at eget enim, vestibulum diam imperdiet vitae suscipit nonummy, tempus sed consequat enim ligula sit at, fusce justo cras nulla et.",
+    "text": "Machine Intelligence Conference 2018 closing keynote by Kenneth Stanley (Uber AI Labs)",
     "rev": false
   }
 ]
