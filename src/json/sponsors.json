@@ -1,14 +1,26 @@
-[
-  {"src": "facebook-logo.jpg"},
-  {"src": "g-research-logo.png"},
-  {"src": "hariri-logo.png"},
-  {"src": "bu-ece-logo.png"},
-  {"src": "intel-ai-logo.png"},
-  {"src": "malong-technologies-logo.png"},
-  {"src": "mit-ibm-logo.png"},
-  {"src": "nvidia-logo.png"},
-  {"src": "redhat-logo.png"},
-  {"src": "sail-logo.png"},
-  {"src": "spark-logo.png"},
-  {"src": "tech-together-logo.png"}
-]
+{
+  "partners": [
+    {"src": "tech-together-logo.png", "href":"https://techtogether.io/"},
+    {"src": "ea-logo.png", "href": "https://www.effectivealtruism.org/"},
+    {"src": "hariri-logo.png", "href": "https://www.bu.edu/hic/"},
+    {"src": "bu-ece-logo.png", "href": "https://www.bu.edu/eng/departments/ece/"}
+  ],
+  "initialization": [
+    {"src": "g-research-logo.png", "href": "https://www.gresearch.co.uk/"}
+  ],
+  "batch": [
+    {"src": "sail-logo.png", "href": "https://sail.bu.edu/"}
+  ],
+  "stochastic": [
+    {"src": "facebook-logo.jpg", "href": "https://ai.facebook.com/"},
+    {"src": "nvidia-logo.png", "href": "https://www.nvidia.com/en-us/deep-learning-ai/"},
+    {"src": "redhat-logo.png", "href": "https://www.redhat.com/en"},
+    {"src": "charles-river-analytics-logo.png", "href": "https://www.cra.com/"},
+    {"src": "spark-logo.png", "href": "https://www.bu.edu/spark/"}
+  ],
+  "adam": [
+    {"src": "mit-ibm-logo.png", "href": "https://mitibmwatsonailab.mit.edu/"},
+    {"src": "intel-ai-logo.png", "href": "https://www.intel.com/content/www/us/en/artificial-intelligence/overview.html"},
+    {"src": "malong-technologies-logo.png", "href": "https://www.malong.com/en/"}
+  ]
+}

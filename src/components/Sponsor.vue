@@ -2,8 +2,11 @@
 	<div id="sponsor" class="sect">
     <h1>our sponsors</h1>
 		<h2>2018-2020</h2>
-		<div class="content">
-			<img class="crop" v-for="(img, i) in images" :src="'assets/img/'+img.src" :key="i">
+		<div class="content" v-for="(sect, i) in sponsors" :key="i">
+			<h2>{{ i }}</h2>
+			<a v-for="(sp, j) in sect" :key="j" :href="sp.href" target="_blank">
+				<img class="crop" :src="'assets/img/'+sp.src">
+			</a>
 		</div>
 	</div>
 </template>
@@ -14,7 +17,7 @@
 		name: 'sponsor',
 		data() {
 			return {
-				images: data
+				sponsors: data
 			}
 		}
 	}
@@ -46,12 +49,18 @@ h2 {
 .content {
 	display:flex;
 	flex-wrap:wrap;
-	justify-content: space-between;
+}
+
+.content h2 {
+	width: 100%;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
 }
 
 .crop {
-	max-height: 80px;
-  max-width: 300px;
+	max-height: 50px;
+  max-width: 200px;
 	margin: 0 20px 20px 0;
 }
 
