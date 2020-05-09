@@ -6,8 +6,9 @@
 				<span class="sub_label">{{ l.heading }}</span>&emsp;{{ l.text }}
 			</p>
 		</div>
+		<!-- <img src="assets/img/mic_origins_2016.jpg"> -->
 		<div class="board">
-			<h1>Board of Directors</h1>
+			<h1>board of directors</h1>
 			<div class="director">
 				<div class="info" v-for="(d,i) in bod" :key="i">
 					<img class="crop" :src="'assets/img/'+d.img">
@@ -41,6 +42,10 @@
   width: 100px;
   height: auto;
   clip-path: circle();
+}
+
+.sub_label {
+	text-transform: uppercase;
 }
 
 @media screen and (max-width: 600px) {
@@ -136,10 +141,6 @@
 		font-weight: 600;
 		font-size: 1.2em;
 		text-transform: uppercase;
-	}
-
-	.director .info p {
-		text-align: center;
 	}
 }
 </style>
