@@ -1,7 +1,7 @@
 <template>
 	<div id="sponsor" class="sect">
-    <h1>our sponsors</h1>
-		<h2>2018-2020</h2>
+    <h1>our sponsors 2018-{{ year }}</h1>
+		<h2 class="joinus">join us on our mission to democratize machine intelligence</h2>
 		<div class="content" v-for="(sect, i) in sponsors" :key="i">
 			<h2>{{ i }}</h2>
 			<a v-for="(sp, j) in sect" :key="j" :href="sp.href" target="_blank">
@@ -17,7 +17,8 @@
 		name: 'sponsor',
 		data() {
 			return {
-				sponsors: data
+				sponsors: data,
+				year: new Date().getFullYear()
 			}
 		}
 	}
@@ -31,11 +32,10 @@ h1 {
 	margin-bottom: 0;
 }
 
-h2 {
-	margin: 0 0 1em 0;
-	padding: 0;
-	font-weight: 500;
-	font-size: 2em;
+.joinus {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1.3em;
 }
 
 .sect {
@@ -56,6 +56,8 @@ h2 {
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: 600;
+	margin: 1em 0 0 0;
+	font-size: 2em;
 }
 
 .crop {

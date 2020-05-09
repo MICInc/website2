@@ -6,6 +6,7 @@
 			<li><a href="https://www.reddit.com/user/MICInc">Reddit</a></li>
 			<li><a href="https://twitter.com/mic_conf">Twitter</a></li>
 			<li><a href="https://www.youtube.com/channel/UCEkwg51OD930FsyTx7bV0Pg">YouTube</a></li>
+			<li><a href="mailto:sponsors@machineintelligence.cc">Email</a></li>
 		</ul>
 		<p>&copy; {{ year }}</p>
 	</div>
