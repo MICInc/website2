@@ -6,6 +6,7 @@
 				<li><a href="#about" v-on:click="click()">about</a></li>
 				<li><a href="#conference" v-on:click="click()">conference</a></li>
 				<li><a href="#sponsor" v-on:click="click()">sponsor</a></li>
+				<li><a href="#social-media" v-on:click="click()">contact</a></li>
 			</ul>
 		</nav>
 	</div>
