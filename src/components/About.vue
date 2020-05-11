@@ -6,7 +6,6 @@
 				<span class="sub_label">{{ l.heading }}</span>&emsp;{{ l.text }}
 			</p>
 		</div>
-		<!-- <img src="assets/img/mic_origins_2016.jpg"> -->
 		<div class="board">
 			<h1>board of directors</h1>
 			<div class="director">
@@ -49,6 +48,10 @@
 }
 
 @media screen and (max-width: 600px) {
+	.sect {
+		display: inline-block;
+	}
+
 	.content {
 			flex-direction: column;
 	}
@@ -65,8 +68,20 @@
 		margin-bottom: 10px;
 	}
 
-	.sect {
-		display: inline-block;
+	.board {
+		width: 100%;
+	}
+
+	.board h1 {
+		margin: 1em 0;
+	}
+
+	.director {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 }
 
@@ -85,6 +100,24 @@
 	.content p {
 		margin: 0 4em 1em 4em;
 	}
+
+	.board h1 {
+		margin: 0;
+		text-align: center;
+		width: 100%;
+		margin: 1em 0;
+	}
+
+	.board {
+		width: 100%;
+	}
+
+	.director {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 4em;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -93,6 +126,18 @@
 		margin: 0;
 		padding: 0 4em;
 		margin-bottom: 1em;
+	}
+
+	.board {
+		width: 100%;
+	}
+
+	.board h1 {
+		margin: 1em 0;
+	}
+
+	.director {
+		padding: 0 4em;
 	}
 }
 
@@ -104,6 +149,10 @@
 
 	.content p {
 		width: 100%;
+	}
+
+	.board h1 {
+		margin: 1em 0;
 	}
 
 	.sub_label {
@@ -122,6 +171,10 @@
 	.content p {
 		margin: 0;
 		padding: 0 4em;
+	}
+
+	.board h1 {
+		margin: 1em 0;
 	}
 
 	.director {
