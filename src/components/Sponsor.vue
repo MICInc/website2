@@ -76,6 +76,11 @@ h1 {
 	.sect {
 		display: inline-block;
 	}
+
+	.joinus {
+		padding: 1em 4em;
+		text-align: center;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -93,6 +98,15 @@ h1 {
 		margin: 0;
 		padding: 0 4em;
 	}
+
+	.sect h1 {
+		text-align: center;
+	}
+
+	.joinus {
+		padding: 0 4em;
+		text-align: center;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -106,7 +120,7 @@ h1 {
 	.content {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 	}
 }
 
@@ -121,7 +135,7 @@ h1 {
 	.content {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 	}
 }
 
