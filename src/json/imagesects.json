@@ -1,0 +1,17 @@
+[
+  {
+    "img": "wimi2.jpg",
+    "text": "MIT-IBM Women in Machine Intelligence Panel 2019: Professor Magy Seif El-Nasr (Northeastern University), Rosanne Liu (Uber AI), Isha Puri (Harvard University)",
+    "rev": false
+  },
+  {
+    "img": "wimi.jpg",
+    "text": "Women in Machine Intelligence Panel 2018: Diane Mueller (RedHat), Jacqueline Xu (Facebook), Kate Saenko (Boston University), Millie Liu (First Star), Sophie Watson (RedHat)",
+    "rev": true
+  },
+  {
+    "img": "kenneth.jpg",
+    "text": "Machine Intelligence Conference 2018 closing keynote by Kenneth Stanley (formerly Uber AI Labs, now OpenAI)",
+    "rev": false
+  }
+]

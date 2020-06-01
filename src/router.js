@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import store from '@/store'
 
 Vue.use(Router)
 
@@ -12,6 +11,10 @@ export default new Router({
 			path: '/',
 			name: '',
 			component: () => import('./views/Index.vue')
+		},
+		{
+			path: '/register',
+			beforeEnter() {location.href = 'https://eventbrite.com'}
 		},
 	]
 })
