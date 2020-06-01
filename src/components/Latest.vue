@@ -10,7 +10,7 @@
 					<span class="update">{{ l.content }}</span>
 				</li>
 			</ul>
-			<img class="crop" src="assets/img/alums.jpg">
+			<img class="crop" src="assets/img/students.jpg">
 		</div>
 	</div>
 </template>

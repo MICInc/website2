@@ -1,10 +1,18 @@
 [
   {
-    "date": "5/11/2020",
-    "content": "Machine Intelligence Conference registration opens."
+  	"date": "10/26/2019",
+  	"content": "MIC hosted a workshop on machine learning for hackers @ Tech Together NYC"
   },
   {
     "date": "10/15/2019",
-    "content": "MIC received its IRS determination letter for 501(c)(3) status."
+    "content": "MIC received its IRS determination letter for 501(c)(3) status"
+  },
+  {
+    "date": "9/7/2019",
+    "content": "Machine Intelligence Conference @ Boston University"
+  },
+  {
+    "date": "11/3/2018",
+    "content": "Inaugural Machine Intelligence Conference @ MIT Media Lab"
   }
 ]

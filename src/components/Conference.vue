@@ -1,36 +1,12 @@
 <template>
 	<div id="conference" class="sect">
 		<div class="header-sect">
-			<div class="header-info">
-				<h1 class="compress-header">machine intelligence conference</h1>
-				<div class="conf-info">
-					<table>
-						<tr class="conf-location">
-							<td>virtual format</td>
-						</tr>
-						<tr class="conf-date">
-							<td>September 26, 2020</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="conf-register">
-				<a href="/register" target="_blank"><button class="btn">register</button></a>
-			</div>
+				<h1>machine intelligence conference</h1>
 		</div>
 		<div class="content">
 			<p v-for="(p, i) in desc" :key="i">
 				{{ p }}
 			</p>
-		</div>
-		<div class="committee">
-			<span class="sub_label">Conference Committee</span>
-			<ul>
-				<li v-for="(c, i) in committee" :key="i">
-					<span class="name">{{ c.name }}</span>
-					<span class="title">{{ c.title }}</span>
-				</li>
-			</ul>
 		</div>
 		<p class="code_of_conduct">
 			<a href="https://confcodeofconduct.com/" target="_blank">Code of Conduct</a>
@@ -44,7 +20,6 @@
 		name: 'conference',
 		data() {
 			return {
-				committee: info.comm,
 				desc: info.desc
 			}
 		}
