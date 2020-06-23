@@ -1,5 +1,6 @@
 <template>
 	<div class="container">
+		<h1>Conference</h1>
 		<div>
 			<h2>2018 Schedule</h2>
 			<p><b>Location</b>: MIT Media Lab, 6th floor</p>
@@ -73,8 +74,6 @@
 <script>
 export default{
 	name: 'schedule2018',
-	beforeMount() {
-	},
 	data() {
 		return {
 			schedule2018: [

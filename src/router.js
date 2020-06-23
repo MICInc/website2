@@ -13,38 +13,34 @@ export default new Router({
 			component: () => import('./views/Index.vue')
 		},
 		{
-			path: 'schedule',
+			path: '/conference',
+			name: 'conference',
+			component: () => import('./views/Conference.vue'),
 			children: [
 				{
 					path: '2018',
 					name: 'schedule2018',
-					component: () => import('@/components/conference/schedule/2018.vue')
+					component: () => import('./components/conference/schedule/2018.vue')
 				},
 				{
 					path: '2019',
 					name: 'schedule2019',
-					component: () => import('@/components/conference/schedule/2019.vue')
-				},
-				{
-					path: '*',
-					beforeEnter: (to, from, next) => {
-						next({ name: 'index' })
-					}
+					component: () => import('./components/conference/schedule/2019.vue')
 				}
 			]
 		},
 		{
-			path: 'speakers',
+			path: '/speakers',
 			children: [
 				{
-					path: '2018/:id',
+					path: '2018',
 					name: 'speakers2018',
-					component: () => import('@/components/conference/speaker/2018.vue')
+					component: () => import('./components/conference/speakers/2018.vue')
 				},
 				{
-					path: '2019/:id',
+					path: '2019',
 					name: 'speakers2019',
-					component: () => import('@/components/conference/speaker/2019.vue')
+					component: () => import('./components/conference/speakers/2019.vue')
 				},
 				{
 					path: '*',
