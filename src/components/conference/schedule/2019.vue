@@ -51,20 +51,6 @@
 					<div v-for="(room, id) in event.rooms" :key="id" :class="room"></div>
 				</div>
 			</div>
-			<div id="sponsors">
-				<div class="container">
-					<div class="section-head">
-						<h2>2019 Sponsors</h2>
-					</div>
-					<div class="sponsor-grid">
-						<div class="sponsor-tile">
-							<a v-for="(s, index) in sponsors" :key="index" :href="s.href" target="_blank">
-								<img :class="s.tier" :src="s.src" :alt="s.alt"/>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 </template>

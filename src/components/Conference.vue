@@ -11,6 +11,7 @@
 		<p class="code_of_conduct">
 			<a href="https://confcodeofconduct.com/" target="_blank">Code of Conduct</a>
 		</p>
+		<router-view></router-view>
 	</div>
 </template>
 
